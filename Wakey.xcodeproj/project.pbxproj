@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1126F751CA034E900C9A956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1126F741CA034E900C9A956 /* AppDelegate.swift */; };
+		D1126F771CA034E900C9A956 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1126F761CA034E900C9A956 /* ViewController.swift */; };
+		D1126F7A1CA034EA00C9A956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1126F781CA034EA00C9A956 /* Main.storyboard */; };
+		D1126F7C1CA034EA00C9A956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1126F7B1CA034EA00C9A956 /* Assets.xcassets */; };
+		D1126F7F1CA034EA00C9A956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1126F7D1CA034EA00C9A956 /* LaunchScreen.storyboard */; };
+		D1126F8A1CA034EA00C9A956 /* WakeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1126F891CA034EA00C9A956 /* WakeyTests.swift */; };
+		D1126F951CA034EA00C9A956 /* WakeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1126F941CA034EA00C9A956 /* WakeyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1126F861CA034EA00C9A956 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1126F691CA034E900C9A956 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1126F701CA034E900C9A956;
+			remoteInfo = Wakey;
+		};
+		D1126F911CA034EA00C9A956 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1126F691CA034E900C9A956 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1126F701CA034E900C9A956;
+			remoteInfo = Wakey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D1126F711CA034E900C9A956 /* Wakey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wakey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1126F741CA034E900C9A956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1126F761CA034E900C9A956 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1126F791CA034EA00C9A956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1126F7B1CA034EA00C9A956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1126F7E1CA034EA00C9A956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1126F801CA034EA00C9A956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1126F851CA034EA00C9A956 /* WakeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1126F891CA034EA00C9A956 /* WakeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeyTests.swift; sourceTree = "<group>"; };
+		D1126F8B1CA034EA00C9A956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1126F901CA034EA00C9A956 /* WakeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1126F941CA034EA00C9A956 /* WakeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeyUITests.swift; sourceTree = "<group>"; };
+		D1126F961CA034EA00C9A956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1126F6E1CA034E900C9A956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1126F821CA034EA00C9A956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1126F8D1CA034EA00C9A956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1126F681CA034E900C9A956 = {
+			isa = PBXGroup;
+			children = (
+				D1126F731CA034E900C9A956 /* Wakey */,
+				D1126F881CA034EA00C9A956 /* WakeyTests */,
+				D1126F931CA034EA00C9A956 /* WakeyUITests */,
+				D1126F721CA034E900C9A956 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1126F721CA034E900C9A956 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1126F711CA034E900C9A956 /* Wakey.app */,
+				D1126F851CA034EA00C9A956 /* WakeyTests.xctest */,
+				D1126F901CA034EA00C9A956 /* WakeyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1126F731CA034E900C9A956 /* Wakey */ = {
+			isa = PBXGroup;
+			children = (
+				D1126F741CA034E900C9A956 /* AppDelegate.swift */,
+				D1126F761CA034E900C9A956 /* ViewController.swift */,
+				D1126F781CA034EA00C9A956 /* Main.storyboard */,
+				D1126F7B1CA034EA00C9A956 /* Assets.xcassets */,
+				D1126F7D1CA034EA00C9A956 /* LaunchScreen.storyboard */,
+				D1126F801CA034EA00C9A956 /* Info.plist */,
+			);
+			path = Wakey;
+			sourceTree = "<group>";
+		};
+		D1126F881CA034EA00C9A956 /* WakeyTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1126F891CA034EA00C9A956 /* WakeyTests.swift */,
+				D1126F8B1CA034EA00C9A956 /* Info.plist */,
+			);
+			path = WakeyTests;
+			sourceTree = "<group>";
+		};
+		D1126F931CA034EA00C9A956 /* WakeyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1126F941CA034EA00C9A956 /* WakeyUITests.swift */,
+				D1126F961CA034EA00C9A956 /* Info.plist */,
+			);
+			path = WakeyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1126F701CA034E900C9A956 /* Wakey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1126F991CA034EA00C9A956 /* Build configuration list for PBXNativeTarget "Wakey" */;
+			buildPhases = (
+				D1126F6D1CA034E900C9A956 /* Sources */,
+				D1126F6E1CA034E900C9A956 /* Frameworks */,
+				D1126F6F1CA034E900C9A956 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wakey;
+			productName = Wakey;
+			productReference = D1126F711CA034E900C9A956 /* Wakey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1126F841CA034EA00C9A956 /* WakeyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1126F9C1CA034EA00C9A956 /* Build configuration list for PBXNativeTarget "WakeyTests" */;
+			buildPhases = (
+				D1126F811CA034EA00C9A956 /* Sources */,
+				D1126F821CA034EA00C9A956 /* Frameworks */,
+				D1126F831CA034EA00C9A956 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1126F871CA034EA00C9A956 /* PBXTargetDependency */,
+			);
+			name = WakeyTests;
+			productName = WakeyTests;
+			productReference = D1126F851CA034EA00C9A956 /* WakeyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D1126F8F1CA034EA00C9A956 /* WakeyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1126F9F1CA034EA00C9A956 /* Build configuration list for PBXNativeTarget "WakeyUITests" */;
+			buildPhases = (
+				D1126F8C1CA034EA00C9A956 /* Sources */,
+				D1126F8D1CA034EA00C9A956 /* Frameworks */,
+				D1126F8E1CA034EA00C9A956 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1126F921CA034EA00C9A956 /* PBXTargetDependency */,
+			);
+			name = WakeyUITests;
+			productName = WakeyUITests;
+			productReference = D1126F901CA034EA00C9A956 /* WakeyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1126F691CA034E900C9A956 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Richard Hsu";
+				TargetAttributes = {
+					D1126F701CA034E900C9A956 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					D1126F841CA034EA00C9A956 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D1126F701CA034E900C9A956;
+					};
+					D1126F8F1CA034EA00C9A956 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D1126F701CA034E900C9A956;
+					};
+				};
+			};
+			buildConfigurationList = D1126F6C1CA034E900C9A956 /* Build configuration list for PBXProject "Wakey" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1126F681CA034E900C9A956;
+			productRefGroup = D1126F721CA034E900C9A956 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1126F701CA034E900C9A956 /* Wakey */,
+				D1126F841CA034EA00C9A956 /* WakeyTests */,
+				D1126F8F1CA034EA00C9A956 /* WakeyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1126F6F1CA034E900C9A956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1126F7F1CA034EA00C9A956 /* LaunchScreen.storyboard in Resources */,
+				D1126F7C1CA034EA00C9A956 /* Assets.xcassets in Resources */,
+				D1126F7A1CA034EA00C9A956 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1126F831CA034EA00C9A956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1126F8E1CA034EA00C9A956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1126F6D1CA034E900C9A956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1126F771CA034E900C9A956 /* ViewController.swift in Sources */,
+				D1126F751CA034E900C9A956 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1126F811CA034EA00C9A956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1126F8A1CA034EA00C9A956 /* WakeyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1126F8C1CA034EA00C9A956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1126F951CA034EA00C9A956 /* WakeyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1126F871CA034EA00C9A956 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1126F701CA034E900C9A956 /* Wakey */;
+			targetProxy = D1126F861CA034EA00C9A956 /* PBXContainerItemProxy */;
+		};
+		D1126F921CA034EA00C9A956 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1126F701CA034E900C9A956 /* Wakey */;
+			targetProxy = D1126F911CA034EA00C9A956 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1126F781CA034EA00C9A956 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1126F791CA034EA00C9A956 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1126F7D1CA034EA00C9A956 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1126F7E1CA034EA00C9A956 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1126F971CA034EA00C9A956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1126F981CA034EA00C9A956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1126F9A1CA034EA00C9A956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Wakey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RH.Wakey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D1126F9B1CA034EA00C9A956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Wakey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RH.Wakey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D1126F9D1CA034EA00C9A956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WakeyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RH.WakeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wakey.app/Wakey";
+			};
+			name = Debug;
+		};
+		D1126F9E1CA034EA00C9A956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WakeyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RH.WakeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wakey.app/Wakey";
+			};
+			name = Release;
+		};
+		D1126FA01CA034EA00C9A956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WakeyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RH.WakeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Wakey;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D1126FA11CA034EA00C9A956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WakeyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RH.WakeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Wakey;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1126F6C1CA034E900C9A956 /* Build configuration list for PBXProject "Wakey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1126F971CA034EA00C9A956 /* Debug */,
+				D1126F981CA034EA00C9A956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1126F991CA034EA00C9A956 /* Build configuration list for PBXNativeTarget "Wakey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1126F9A1CA034EA00C9A956 /* Debug */,
+				D1126F9B1CA034EA00C9A956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D1126F9C1CA034EA00C9A956 /* Build configuration list for PBXNativeTarget "WakeyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1126F9D1CA034EA00C9A956 /* Debug */,
+				D1126F9E1CA034EA00C9A956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D1126F9F1CA034EA00C9A956 /* Build configuration list for PBXNativeTarget "WakeyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1126FA01CA034EA00C9A956 /* Debug */,
+				D1126FA11CA034EA00C9A956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1126F691CA034E900C9A956 /* Project object */;
+}
