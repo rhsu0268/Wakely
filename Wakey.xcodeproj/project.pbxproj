@@ -14,6 +14,8 @@
 		D1126F7F1CA034EA00C9A956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1126F7D1CA034EA00C9A956 /* LaunchScreen.storyboard */; };
 		D1126F8A1CA034EA00C9A956 /* WakeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1126F891CA034EA00C9A956 /* WakeyTests.swift */; };
 		D1126F951CA034EA00C9A956 /* WakeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1126F941CA034EA00C9A956 /* WakeyUITests.swift */; };
+		D1126FA51CA0375200C9A956 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1126FA41CA0375200C9A956 /* CurrentWeather.plist */; };
+		D18C64FE1CA19EE200504BEF /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D1126F901CA034EA00C9A956 /* WakeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1126F941CA034EA00C9A956 /* WakeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeyUITests.swift; sourceTree = "<group>"; };
 		D1126F961CA034EA00C9A956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1126FA41CA0375200C9A956 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
+		D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		D1126F731CA034E900C9A956 /* Wakey */ = {
 			isa = PBXGroup;
 			children = (
+				D1126FA41CA0375200C9A956 /* CurrentWeather.plist */,
 				D1126F741CA034E900C9A956 /* AppDelegate.swift */,
 				D1126F761CA034E900C9A956 /* ViewController.swift */,
+				D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */,
 				D1126F781CA034EA00C9A956 /* Main.storyboard */,
 				D1126F7B1CA034EA00C9A956 /* Assets.xcassets */,
 				D1126F7D1CA034EA00C9A956 /* LaunchScreen.storyboard */,
@@ -230,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1126F7F1CA034EA00C9A956 /* LaunchScreen.storyboard in Resources */,
+				D1126FA51CA0375200C9A956 /* CurrentWeather.plist in Resources */,
 				D1126F7C1CA034EA00C9A956 /* Assets.xcassets in Resources */,
 				D1126F7A1CA034EA00C9A956 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1126F771CA034E900C9A956 /* ViewController.swift in Sources */,
+				D18C64FE1CA19EE200504BEF /* CurrentWeather.swift in Sources */,
 				D1126F751CA034E900C9A956 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +490,7 @@
 				D1126F9B1CA034EA00C9A956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1126F9C1CA034EA00C9A956 /* Build configuration list for PBXNativeTarget "WakeyTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				D1126F9E1CA034EA00C9A956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1126F9F1CA034EA00C9A956 /* Build configuration list for PBXNativeTarget "WakeyUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				D1126FA11CA034EA00C9A956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
