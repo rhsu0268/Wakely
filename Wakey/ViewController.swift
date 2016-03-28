@@ -12,17 +12,28 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var currentTemperatureLabel: UILabel?
-    
-    
     @IBOutlet weak var currentHumidityLabel: UILabel?
-    
-    
     @IBOutlet weak var currentPrecipitationLabel: UILabel?
+    
+    private let forecastAPIKey = "c6338dd9db43cd95c1ac429b5193b2fc"
+    
+    //let forecastURL = NSURL(string: "https://api.forecast.io/forecast/c6338dd9db43cd95c1ac429b5193b2fc/37.8267,-122.423")
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(forecastAPIKey)/")
+        
+        let forecastURL = NSURL(string: "37.8267,-122.423", relativeToURL: baseURL)
+        
+        // Data objet to fetch weather data
+        let weatherData = try? NSData(contentsOfURL: forecastURL!, options: [])
+        print(weatherData)
+        
+        
+        /*
         if let plistPath = NSBundle.mainBundle().pathForResource("CurrentWeather", ofType: "plist"),
     
             let weatherDictionary = NSDictionary(contentsOfFile: plistPath),
@@ -37,6 +48,7 @@ class ViewController: UIViewController {
             currentPrecipitationLabel?.text = "\(currentWeather.precipProbability)%"
             
         }
+        */
     }
 
     override func didReceiveMemoryWarning() {
