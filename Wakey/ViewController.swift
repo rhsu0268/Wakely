@@ -49,6 +49,19 @@ class ViewController: UIViewController {
             
         }
         */
+        
+        // Use NSURL Session API to fetch data
+        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: configuration)
+        
+        // NSURLRequest object
+        let request = NSURLRequest(URL: forecastURL!)
+        
+        let dataTask = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
+            print(data)
+        })
+        
+        dataTask.resume()
     }
 
     override func didReceiveMemoryWarning() {
