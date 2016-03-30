@@ -19,11 +19,42 @@ class ViewController: UIViewController {
     
     //let forecastURL = NSURL(string: "https://api.forecast.io/forecast/c6338dd9db43cd95c1ac429b5193b2fc/37.8267,-122.423")
 
-
+    let coordinate: (lat: Double, long: Double) = (37.8267, -122.423)
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let forecastService = ForecastService(APIKey: forecastAPIKey)
+        forecastService.getForecast(coordinate.lat, long: coordinate.long)
+        {
+            (let currently) in
+            if let currentWeather = currently
+            {
+                // update UI
+                dispatch_async(dispatch_get_main_queue())
+                {
+                    // execute closure
+                    if let temperature = currentWeather.temperature
+                    {
+                        self.currentTemperatureLabel?.text = "\(temperature)º"
+                    }
+                    
+                    if let humidity = currentWeather.humidity
+                    {
+                        self.currentHumidityLabel?.text = "\(humidity)%"
+                    }
+                    
+                    if let precipitation = currentWeather.precipProbability
+                    {
+                        self.currentHumidityLabel?.text = "\(precipitation)%"
+                    }
+
+                    
+                }
+            }
+        }
+        
+        /*
         let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(forecastAPIKey)/")
         
         let forecastURL = NSURL(string: "37.8267,-122.423", relativeToURL: baseURL)
@@ -31,7 +62,7 @@ class ViewController: UIViewController {
         // Data objet to fetch weather data
         let weatherData = try? NSData(contentsOfURL: forecastURL!, options: [])
         print(weatherData)
-        
+        */
         
         /*
         if let plistPath = NSBundle.mainBundle().pathForResource("CurrentWeather", ofType: "plist"),
@@ -51,6 +82,7 @@ class ViewController: UIViewController {
         */
         
         // Use NSURL Session API to fetch data
+        /*
         let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
         let session = NSURLSession(configuration: configuration)
         
@@ -62,6 +94,9 @@ class ViewController: UIViewController {
         })
         
         dataTask.resume()
+        */
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

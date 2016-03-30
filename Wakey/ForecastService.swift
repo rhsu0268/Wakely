@@ -41,18 +41,7 @@ struct ForecastService
             print("Could not construct a valid URL!")
         }
     }
-    /*
-    func currentWeatherFromJSON(jsonDictionary: [String]?) -> CurrentWeather?
-    {
-        if let currentWeatherDictionary = jsonDictionary?["currently"] as? [String: AnyObject] {
-            return CurrentWeather(weatherDictionary: currentWeatherDictionary)
-        }
-        else {
-            print("JSON dictionary returned nil for 'currently' key")
-            return nil
-        }
-    }
-    */
+
     func currentWeatherFromJSON(jsonDictionary: [String: AnyObject]?) -> CurrentWeather? {
         if let currentWeatherDictionary = jsonDictionary?["currently"] as? [String:AnyObject] {
             return CurrentWeather(weatherDictionary: currentWeatherDictionary)
