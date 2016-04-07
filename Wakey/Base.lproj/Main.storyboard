@@ -47,18 +47,43 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="sSh-X6-p5w">
+                                <rect key="frame" x="190" y="108" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="SYp-Oc-Cqw"/>
+                                    <constraint firstAttribute="width" constant="60" id="aq8-dN-2Uc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcatraz Island, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10u-ji-0Dr">
+                                <rect key="frame" x="253" y="127" width="163" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbv-Zt-DVp">
+                                <rect key="frame" x="256" y="514" width="88" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="aJU-Ch-bif" firstAttribute="centerX" secondItem="8Ob-fG-YIA" secondAttribute="centerX" id="3GE-NI-QRy"/>
                             <constraint firstItem="NKL-OP-16k" firstAttribute="centerX" secondItem="DVC-2Y-DRv" secondAttribute="centerX" constant="1" id="3ou-MU-xNW"/>
                             <constraint firstItem="bqw-Pc-4aY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="65y-KD-wa1"/>
+                            <constraint firstItem="10u-ji-0Dr" firstAttribute="leading" secondItem="sSh-X6-p5w" secondAttribute="trailing" constant="3" id="6dS-2Z-hRz"/>
                             <constraint firstItem="NKL-OP-16k" firstAttribute="top" secondItem="DVC-2Y-DRv" secondAttribute="bottom" constant="8" id="8oK-yO-98P"/>
                             <constraint firstItem="aJU-Ch-bif" firstAttribute="top" secondItem="8Ob-fG-YIA" secondAttribute="bottom" constant="8" id="9Vo-pU-EhL"/>
                             <constraint firstItem="DVC-2Y-DRv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-65" id="GUk-c5-mwu"/>
+                            <constraint firstItem="Dbv-Zt-DVp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OZo-Dj-XjB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dbv-Zt-DVp" secondAttribute="bottom" constant="60" id="POu-eo-IAt"/>
                             <constraint firstItem="8Ob-fG-YIA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="81" id="YxL-Mt-894"/>
                             <constraint firstItem="DVC-2Y-DRv" firstAttribute="top" secondItem="bqw-Pc-4aY" secondAttribute="bottom" constant="6" id="h2K-OS-Qkn"/>
+                            <constraint firstItem="bqw-Pc-4aY" firstAttribute="top" secondItem="sSh-X6-p5w" secondAttribute="bottom" constant="37" id="lgL-Uu-0rE"/>
+                            <constraint firstItem="bqw-Pc-4aY" firstAttribute="top" secondItem="10u-ji-0Dr" secondAttribute="bottom" constant="54" id="tjm-X4-qgf"/>
                             <constraint firstItem="bqw-Pc-4aY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wg2-TJ-XnB"/>
+                            <constraint firstItem="sSh-X6-p5w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="xD5-aa-N4Z"/>
                             <constraint firstItem="8Ob-fG-YIA" firstAttribute="top" secondItem="bqw-Pc-4aY" secondAttribute="bottom" constant="6" id="z7D-7V-86c"/>
                         </constraints>
                     </view>
@@ -66,10 +91,15 @@
                         <outlet property="currentHumidityLabel" destination="NKL-OP-16k" id="9t1-Yw-VnV"/>
                         <outlet property="currentPrecipitationLabel" destination="aJU-Ch-bif" id="8sH-6z-rva"/>
                         <outlet property="currentTemperatureLabel" destination="bqw-Pc-4aY" id="8lr-Ko-N5p"/>
+                        <outlet property="currentWeatherIcon" destination="sSh-X6-p5w" id="C4b-et-bf5"/>
+                        <outlet property="currentWeatherSummary" destination="Dbv-Zt-DVp" id="qUD-Vd-JKw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="default" width="30" height="30"/>
+    </resources>
 </document>
