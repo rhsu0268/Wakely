@@ -21,53 +21,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentWeatherSummary: UILabel?
     
     
+    @IBOutlet weak var refreshButton: UIButton?
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView?
+    
+    
     private let forecastAPIKey = "c6338dd9db43cd95c1ac429b5193b2fc"
     
     //let forecastURL = NSURL(string: "https://api.forecast.io/forecast/c6338dd9db43cd95c1ac429b5193b2fc/37.8267,-122.423")
 
     let coordinate: (lat: Double, long: Double) = (37.8267, -122.423)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let forecastService = ForecastService(APIKey: forecastAPIKey)
-        forecastService.getForecast(coordinate.lat, long: coordinate.long)
-        {
-            (let currently) in
-            if let currentWeather = currently
-            {
-                // update UI
-                dispatch_async(dispatch_get_main_queue())
-                {
-                    // execute closure
-                    if let temperature = currentWeather.temperature
-                    {
-                        self.currentTemperatureLabel?.text = "\(temperature)º"
-                    }
-                    
-                    if let humidity = currentWeather.humidity
-                    {
-                        self.currentHumidityLabel?.text = "\(humidity)%"
-                    }
-                    
-                    if let precipitation = currentWeather.precipProbability
-                    {
-                        self.currentHumidityLabel?.text = "\(precipitation)%"
-                    }
-                    
-                    if let icon = currentWeather.icon
-                    {
-                        self.currentWeatherIcon?.image = icon
-                    }
-                    
-                    if let summary = currentWeather.summary
-                    {
-                        self.currentWeatherSummary?.text = summary
-                    }
-
-                    
-                }
-            }
+        retrieveWeatherForecast()
+      
         }
         
         /*
@@ -112,14 +81,77 @@ class ViewController: UIViewController {
         dataTask.resume()
         */
         
-        
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
+    func retrieveWeatherForecast()
+    {
+        let forecastService = ForecastService(APIKey: forecastAPIKey)
+        forecastService.getForecast(coordinate.lat, long: coordinate.long)
+        {
+            (let currently) in
+            if let currentWeather = currently
+            {
+                // update UI
+                dispatch_async(dispatch_get_main_queue())
+                {
+                    // execute closure
+                    if let temperature = currentWeather.temperature
+                    {
+                        self.currentTemperatureLabel?.text = "\(temperature)º"
+                    }
+                    
+                    if let humidity = currentWeather.humidity
+                    {
+                        self.currentHumidityLabel?.text = "\(humidity)%"
+                    }
+                    
+                    if let precipitation = currentWeather.precipProbability
+                    {
+                        self.currentHumidityLabel?.text = "\(precipitation)%"
+                    }
+                    
+                    if let icon = currentWeather.icon
+                    {
+                        self.currentWeatherIcon?.image = icon
+                    }
+                    
+                    if let summary = currentWeather.summary
+                    {
+                        self.currentWeatherSummary?.text = summary
+                    }
+                    
+                    // stop animating
+                    self.toggleRefreshAnimation(false)
+                }
+            }
+        }
+    }
+    
+    
+    @IBAction func refreshWeather() {
+        toggleRefreshAnimation(true)
+        retrieveWeatherForecast()
+    }
+    
+    func toggleRefreshAnimation(on: Bool)
+    {
+        refreshButton?.hidden = on
+        
+        if on
+        {
+            activityIndicator?.startAnimating()
+        }
+        else
+        {
+            activityIndicator?.stopAnimating()
+        }
+    }
+    
+    
 }
 
