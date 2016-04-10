@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WeatherDataController: UIViewController {
     
     
     @IBOutlet weak var currentTemperatureLabel: UILabel?
