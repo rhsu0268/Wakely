@@ -18,6 +18,7 @@
 		D13FBBEE1CAB1C90007AA481 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13FBBED1CAB1C90007AA481 /* NetworkOperation.swift */; };
 		D18C64FE1CA19EE200504BEF /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */; };
 		D1A8FC0C1CB9750E000B1924 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A8FC0B1CB9750E000B1924 /* HomeController.swift */; };
+		D1AE04B31CBC9995005E31A6 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE04B21CBC9995005E31A6 /* TimerViewController.swift */; };
 		D1B062401CAC28E2008132C8 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B0623F1CAC28E1008132C8 /* ForecastService.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		D13FBBED1CAB1C90007AA481 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		D1A8FC0B1CB9750E000B1924 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		D1AE04B21CBC9995005E31A6 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		D1B0623F1CAC28E1008132C8 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 				D1126F761CA034E900C9A956 /* WeatherDataController.swift */,
 				D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */,
 				D1126F781CA034EA00C9A956 /* Main.storyboard */,
+				D1AE04B21CBC9995005E31A6 /* TimerViewController.swift */,
 				D1A8FC0B1CB9750E000B1924 /* HomeController.swift */,
 				D1126F7B1CA034EA00C9A956 /* Assets.xcassets */,
 				D1126F7D1CA034EA00C9A956 /* LaunchScreen.storyboard */,
@@ -275,6 +278,7 @@
 				D13FBBEE1CAB1C90007AA481 /* NetworkOperation.swift in Sources */,
 				D1126F771CA034E900C9A956 /* WeatherDataController.swift in Sources */,
 				D1A8FC0C1CB9750E000B1924 /* HomeController.swift in Sources */,
+				D1AE04B31CBC9995005E31A6 /* TimerViewController.swift in Sources */,
 				D18C64FE1CA19EE200504BEF /* CurrentWeather.swift in Sources */,
 				D1B062401CAC28E2008132C8 /* ForecastService.swift in Sources */,
 				D1126F751CA034E900C9A956 /* AppDelegate.swift in Sources */,

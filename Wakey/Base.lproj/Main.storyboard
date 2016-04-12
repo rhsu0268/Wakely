@@ -18,11 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRm-j1-5Hz">
-                                <rect key="frame" x="235" y="285" width="130" height="30"/>
+                                <rect key="frame" x="235" y="186" width="130" height="30"/>
                                 <state key="normal" title="Weather Controller"/>
                                 <connections>
                                     <action selector="showWeatherController:" destination="EHb-nM-hPf" eventType="touchUpInside" id="ckM-wN-DKI"/>
                                     <segue destination="BYZ-38-t0r" kind="push" identifier="showWeatherDataController" id="f7c-6U-EGa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0D-C0-5YD">
+                                <rect key="frame" x="244" y="285" width="112" height="30"/>
+                                <state key="normal" title="Timer Controller"/>
+                                <connections>
+                                    <segue destination="1iv-VU-PxC" kind="push" id="cVb-yy-BhX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88h-yj-deM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734" y="227"/>
+            <point key="canvasLocation" x="1706" y="233"/>
         </scene>
         <!--Weather-->
         <scene sceneID="tne-QT-ifu">
@@ -145,7 +152,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2465" y="227"/>
+            <point key="canvasLocation" x="2450" y="233"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="kX1-2b-5lt">
+            <objects>
+                <viewController id="1iv-VU-PxC" customClass="TimerViewController" customModule="Wakey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KLO-Xy-AKS"/>
+                        <viewControllerLayoutGuide type="bottom" id="ilr-qC-t7k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4qD-XA-cKi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NhX-x7-iqL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wnu-Il-qGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2450" y="930"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pU1-Ml-kI7">
