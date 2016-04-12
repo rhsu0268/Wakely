@@ -9,6 +9,9 @@
 import UIKit
 
 class TimerViewController: UIViewController {
+    
+    
+    @IBOutlet weak var userInputField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +25,19 @@ class TimerViewController: UIViewController {
     }
     
 
+
+    @IBAction func startTimer(sender: UIButton) {
+    }
+    
+    
+    @IBAction func stopTimer(sender: UIButton) {
+    }
+    
+    
+    @IBAction func resetTimer(sender: UIButton) {
+    }
+    
+    
     /*
     // MARK: - Navigation
 
