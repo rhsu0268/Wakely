@@ -55,20 +55,50 @@ class TimerViewController: UIViewController {
         {
             timerCountDownLabel.text = String(counter--)
         }
+        else
+        {
+            timerCountDownLabel.text = "Wake up!"
+        }
     }
 
     
     @IBAction func startTimer(sender: UIButton) {
         
-        // create a timer
-        timerCountDownLabel.text = "Timer started!"
-        //timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateCounter"), userInfo: nil, repeats: true)
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateCounter:"), userInfo: nil, repeats: true)
+        let userTimeInput = self.userInputField.text!
+        print(userTimeInput)
+        
+        if (userTimeInput == "")
+        {
+            let alertController = UIAlertController(title: "Error", message:
+                "Please enter how long you want to sleep...", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        else
+        {
+            print(userTimeInput)
+            
+            // set the counter
+            counter = Int(userTimeInput)!
+            
+            // create a timer
+            timerCountDownLabel.text = "Timer started!"
+            //timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateCounter"), userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateCounter:"), userInfo: nil, repeats: true)
+        }
         
     }
     
     
     @IBAction func resetTimer(sender: UIButton) {
+        
+        timer.invalidate()
+        
+        // reset the counter
+        counter = 10
+        timerCountDownLabel.text = "Timer restarted!"
+        
     }
     
     func dismissKeyboard() {
