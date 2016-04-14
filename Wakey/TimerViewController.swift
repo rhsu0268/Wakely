@@ -24,8 +24,12 @@ class TimerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        timerCountDownLabel.text = String(counter)
+        //timerCountDownLabel.text = String(counter)
         // Do any additional setup after loading the view.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +71,11 @@ class TimerViewController: UIViewController {
     @IBAction func resetTimer(sender: UIButton) {
     }
     
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+
     
     
     
