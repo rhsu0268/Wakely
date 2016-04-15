@@ -33,6 +33,13 @@
                                     <segue destination="1iv-VU-PxC" kind="push" id="cVb-yy-BhX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhC-qj-jt1">
+                                <rect key="frame" x="244" y="373" width="113" height="30"/>
+                                <state key="normal" title="Music Controller"/>
+                                <connections>
+                                    <segue destination="n32-Od-3ud" kind="push" id="ZOu-aW-dIJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -41,6 +48,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88h-yj-deM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1706" y="233"/>
+        </scene>
+        <!--Music Controller-->
+        <scene sceneID="MMI-rS-Otd">
+            <objects>
+                <viewController id="n32-Od-3ud" customClass="MusicController" customModule="Wakey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yuC-yJ-m44"/>
+                        <viewControllerLayoutGuide type="bottom" id="dfP-XK-hUf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a3I-Er-hVj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4E8-sv-uky">
+                                <rect key="frame" x="146" y="369" width="75" height="30"/>
+                                <state key="normal" title="Play/Pause"/>
+                                <connections>
+                                    <action selector="playOrPauseMusic:" destination="n32-Od-3ud" eventType="touchUpInside" id="5Da-rj-wxe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsr-pm-128">
+                                <rect key="frame" x="275" y="289" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4S-zg-5C8">
+                                <rect key="frame" x="413" y="369" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopMusic:" destination="n32-Od-3ud" eventType="touchUpInside" id="89G-qU-c7P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1899721489" green="0.89206349200000001" blue="0.49931132789999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h3O-n2-w5H"/>
+                    <connections>
+                        <outlet property="playedTimeLabel" destination="Hsr-pm-128" id="WmR-n3-dxp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mH1-0N-BSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="999"/>
         </scene>
         <!--Weather-->
         <scene sceneID="tne-QT-ifu">
@@ -155,10 +206,10 @@
             </objects>
             <point key="canvasLocation" x="2450" y="233"/>
         </scene>
-        <!--Timer View Controller-->
+        <!--Timer Controller-->
         <scene sceneID="kX1-2b-5lt">
             <objects>
-                <viewController id="1iv-VU-PxC" customClass="TimerViewController" customModule="Wakey" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1iv-VU-PxC" customClass="TimerController" customModule="Wakey" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KLO-Xy-AKS"/>
                         <viewControllerLayoutGuide type="bottom" id="ilr-qC-t7k"/>

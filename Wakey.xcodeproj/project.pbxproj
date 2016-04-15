@@ -16,9 +16,11 @@
 		D1126F951CA034EA00C9A956 /* WakeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1126F941CA034EA00C9A956 /* WakeyUITests.swift */; };
 		D1126FA51CA0375200C9A956 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1126FA41CA0375200C9A956 /* CurrentWeather.plist */; };
 		D13FBBEE1CAB1C90007AA481 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13FBBED1CAB1C90007AA481 /* NetworkOperation.swift */; };
+		D15E1F311CC0087D008A2361 /* umbrella.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D15E1F301CC0087D008A2361 /* umbrella.mp3 */; };
+		D15E1F351CC087A4008A2361 /* MusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15E1F341CC087A3008A2361 /* MusicController.swift */; };
 		D18C64FE1CA19EE200504BEF /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */; };
 		D1A8FC0C1CB9750E000B1924 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A8FC0B1CB9750E000B1924 /* HomeController.swift */; };
-		D1AE04B31CBC9995005E31A6 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE04B21CBC9995005E31A6 /* TimerViewController.swift */; };
+		D1AE04B31CBC9995005E31A6 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE04B21CBC9995005E31A6 /* TimerController.swift */; };
 		D1B062401CAC28E2008132C8 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B0623F1CAC28E1008132C8 /* ForecastService.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +57,11 @@
 		D1126F961CA034EA00C9A956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1126FA41CA0375200C9A956 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
 		D13FBBED1CAB1C90007AA481 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		D15E1F301CC0087D008A2361 /* umbrella.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = umbrella.mp3; sourceTree = "<group>"; };
+		D15E1F341CC087A3008A2361 /* MusicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicController.swift; path = ../MusicController.swift; sourceTree = "<group>"; };
 		D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		D1A8FC0B1CB9750E000B1924 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		D1AE04B21CBC9995005E31A6 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		D1AE04B21CBC9995005E31A6 /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 		D1B0623F1CAC28E1008132C8 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +113,7 @@
 		D1126F731CA034E900C9A956 /* Wakey */ = {
 			isa = PBXGroup;
 			children = (
+				D15E1F301CC0087D008A2361 /* umbrella.mp3 */,
 				D1B0623F1CAC28E1008132C8 /* ForecastService.swift */,
 				D13FBBED1CAB1C90007AA481 /* NetworkOperation.swift */,
 				D1126FA41CA0375200C9A956 /* CurrentWeather.plist */,
@@ -116,8 +121,9 @@
 				D1126F761CA034E900C9A956 /* WeatherDataController.swift */,
 				D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */,
 				D1126F781CA034EA00C9A956 /* Main.storyboard */,
-				D1AE04B21CBC9995005E31A6 /* TimerViewController.swift */,
+				D1AE04B21CBC9995005E31A6 /* TimerController.swift */,
 				D1A8FC0B1CB9750E000B1924 /* HomeController.swift */,
+				D15E1F341CC087A3008A2361 /* MusicController.swift */,
 				D1126F7B1CA034EA00C9A956 /* Assets.xcassets */,
 				D1126F7D1CA034EA00C9A956 /* LaunchScreen.storyboard */,
 				D1126F801CA034EA00C9A956 /* Info.plist */,
@@ -251,6 +257,7 @@
 				D1126FA51CA0375200C9A956 /* CurrentWeather.plist in Resources */,
 				D1126F7C1CA034EA00C9A956 /* Assets.xcassets in Resources */,
 				D1126F7A1CA034EA00C9A956 /* Main.storyboard in Resources */,
+				D15E1F311CC0087D008A2361 /* umbrella.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +285,9 @@
 				D13FBBEE1CAB1C90007AA481 /* NetworkOperation.swift in Sources */,
 				D1126F771CA034E900C9A956 /* WeatherDataController.swift in Sources */,
 				D1A8FC0C1CB9750E000B1924 /* HomeController.swift in Sources */,
-				D1AE04B31CBC9995005E31A6 /* TimerViewController.swift in Sources */,
+				D1AE04B31CBC9995005E31A6 /* TimerController.swift in Sources */,
 				D18C64FE1CA19EE200504BEF /* CurrentWeather.swift in Sources */,
+				D15E1F351CC087A4008A2361 /* MusicController.swift in Sources */,
 				D1B062401CAC28E2008132C8 /* ForecastService.swift in Sources */,
 				D1126F751CA034E900C9A956 /* AppDelegate.swift in Sources */,
 			);
