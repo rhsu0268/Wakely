@@ -21,6 +21,8 @@ class MusicController: UIViewController {
     var isPlaying = false
     
     var timer:NSTimer!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,7 @@ class MusicController: UIViewController {
         
         //trackTitle.text = "umbrella"
         
-        let path = NSBundle.mainBundle().pathForResource("umbrella.mp3", ofType: nil)
+        let path = NSBundle.mainBundle().pathForResource("nature.mp3", ofType: nil)
         
         //var error:NSError?
         
@@ -64,7 +66,20 @@ class MusicController: UIViewController {
         {
             weatherSong.play()
             isPlaying = true
+            
+            // incremeent timer
+            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime", userInfo: nil, repeats: true)
         }
+    }
+    
+    func updateTime()
+    {
+        let currentTime = Int(weatherSong.currentTime)
+        let minutes = currentTime / 60
+        let seconds = currentTime - minutes * 60
+        
+        // update the playedTime label
+        playedTimeLabel.text = NSString(format: "%02d:%02d", minutes, seconds) as String
     }
     
     

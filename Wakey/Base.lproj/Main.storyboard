@@ -61,32 +61,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4E8-sv-uky">
-                                <rect key="frame" x="146" y="369" width="75" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4E8-sv-uky">
+                                <rect key="frame" x="190" y="510" width="75" height="30"/>
                                 <state key="normal" title="Play/Pause"/>
                                 <connections>
                                     <action selector="playOrPauseMusic:" destination="n32-Od-3ud" eventType="touchUpInside" id="5Da-rj-wxe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsr-pm-128">
-                                <rect key="frame" x="275" y="289" width="46" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsr-pm-128">
+                                <rect key="frame" x="272" y="469" width="56" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4S-zg-5C8">
-                                <rect key="frame" x="413" y="369" width="32" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4S-zg-5C8">
+                                <rect key="frame" x="361" y="510" width="32" height="30"/>
                                 <state key="normal" title="Stop"/>
                                 <connections>
                                     <action selector="stopMusic:" destination="n32-Od-3ud" eventType="touchUpInside" id="89G-qU-c7P"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nature" translatesAutoresizingMaskIntoConstraints="NO" id="Pin-zw-RQg">
+                                <rect key="frame" x="137" y="124" width="157" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="classical" translatesAutoresizingMaskIntoConstraints="NO" id="Rko-q2-n3S">
+                                <rect key="frame" x="314" y="124" width="157" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="audio-book" translatesAutoresizingMaskIntoConstraints="NO" id="E5T-xg-Sy5">
+                                <rect key="frame" x="314" y="289" width="157" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ambient" translatesAutoresizingMaskIntoConstraints="NO" id="2hZ-KH-ESZ">
+                                <rect key="frame" x="137" y="289" width="157" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a genre of music to enjoy..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-JS-e37">
+                                <rect key="frame" x="149" y="84" width="302" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1899721489" green="0.89206349200000001" blue="0.49931132789999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dfP-XK-hUf" firstAttribute="top" secondItem="4E8-sv-uky" secondAttribute="bottom" constant="60" id="0Bh-aW-3Fq"/>
+                            <constraint firstItem="dfP-XK-hUf" firstAttribute="top" secondItem="Hsr-pm-128" secondAttribute="bottom" constant="107" id="2OG-hS-b00"/>
+                            <constraint firstItem="4E8-sv-uky" firstAttribute="centerX" secondItem="a3I-Er-hVj" secondAttribute="centerX" id="501-tf-cX4"/>
+                            <constraint firstItem="dfP-XK-hUf" firstAttribute="top" secondItem="A4S-zg-5C8" secondAttribute="bottom" constant="60" id="7jY-x0-zBc"/>
+                            <constraint firstItem="A4S-zg-5C8" firstAttribute="centerX" secondItem="a3I-Er-hVj" secondAttribute="centerX" id="dmg-5Y-hiK"/>
+                            <constraint firstItem="Hsr-pm-128" firstAttribute="centerX" secondItem="a3I-Er-hVj" secondAttribute="centerX" id="naS-sR-yAI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="h3O-n2-w5H"/>
                     <connections>
-                        <outlet property="playedTimeLabel" destination="Hsr-pm-128" id="WmR-n3-dxp"/>
+                        <outlet property="playedTimeLabel" destination="Hsr-pm-128" id="4Zu-zH-UWp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mH1-0N-BSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -319,7 +345,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ambient" width="175" height="175"/>
+        <image name="audio-book" width="300" height="300"/>
+        <image name="classical" width="512" height="512"/>
         <image name="default" width="30" height="30"/>
+        <image name="nature" width="175" height="175"/>
         <image name="refresh" width="43" height="43"/>
     </resources>
 </document>
