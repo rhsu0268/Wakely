@@ -86,6 +86,7 @@ class MusicController: UIViewController {
     @IBAction func stopMusic(sender: UIButton) {
         
         weatherSong.stop()
+        weatherSong.currentTime = 0
         isPlaying = false
     }
     

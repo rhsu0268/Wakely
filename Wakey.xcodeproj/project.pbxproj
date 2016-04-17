@@ -23,6 +23,7 @@
 		D1708CE51CC417360021B421 /* dancing-in-the-moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1708CE41CC417360021B421 /* dancing-in-the-moonlight.mp3 */; };
 		D1708CE71CC4179A0021B421 /* pocket-of-sunshine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1708CE61CC4179A0021B421 /* pocket-of-sunshine.mp3 */; };
 		D1708CE91CC418860021B421 /* cloudy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1708CE81CC418860021B421 /* cloudy.mp3 */; };
+		D1708CED1CC41C170021B421 /* colors-of-the-wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1708CEC1CC41C170021B421 /* colors-of-the-wind.mp3 */; };
 		D18C64FE1CA19EE200504BEF /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */; };
 		D1A8FC0C1CB9750E000B1924 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A8FC0B1CB9750E000B1924 /* HomeController.swift */; };
 		D1AE04B31CBC9995005E31A6 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE04B21CBC9995005E31A6 /* TimerController.swift */; };
@@ -69,6 +70,7 @@
 		D1708CE41CC417360021B421 /* dancing-in-the-moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dancing-in-the-moonlight.mp3"; sourceTree = "<group>"; };
 		D1708CE61CC4179A0021B421 /* pocket-of-sunshine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pocket-of-sunshine.mp3"; sourceTree = "<group>"; };
 		D1708CE81CC418860021B421 /* cloudy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cloudy.mp3; sourceTree = "<group>"; };
+		D1708CEC1CC41C170021B421 /* colors-of-the-wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "colors-of-the-wind.mp3"; sourceTree = "<group>"; };
 		D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		D1A8FC0B1CB9750E000B1924 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		D1AE04B21CBC9995005E31A6 /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		D1126F731CA034E900C9A956 /* Wakey */ = {
 			isa = PBXGroup;
 			children = (
+				D1708CEC1CC41C170021B421 /* colors-of-the-wind.mp3 */,
 				D1708CE81CC418860021B421 /* cloudy.mp3 */,
 				D1708CE61CC4179A0021B421 /* pocket-of-sunshine.mp3 */,
 				D1708CE41CC417360021B421 /* dancing-in-the-moonlight.mp3 */,
@@ -271,6 +274,7 @@
 				D1126F7F1CA034EA00C9A956 /* LaunchScreen.storyboard in Resources */,
 				D1126FA51CA0375200C9A956 /* CurrentWeather.plist in Resources */,
 				D1708CE31CC416CB0021B421 /* let-it-snow.mp3 in Resources */,
+				D1708CED1CC41C170021B421 /* colors-of-the-wind.mp3 in Resources */,
 				D1708CE11CC412D00021B421 /* nature.mp3 in Resources */,
 				D1708CE91CC418860021B421 /* cloudy.mp3 in Resources */,
 				D1126F7C1CA034EA00C9A956 /* Assets.xcassets in Resources */,
