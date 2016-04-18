@@ -24,6 +24,8 @@
 		D1708CE71CC4179A0021B421 /* pocket-of-sunshine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1708CE61CC4179A0021B421 /* pocket-of-sunshine.mp3 */; };
 		D1708CE91CC418860021B421 /* cloudy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1708CE81CC418860021B421 /* cloudy.mp3 */; };
 		D1708CED1CC41C170021B421 /* colors-of-the-wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1708CEC1CC41C170021B421 /* colors-of-the-wind.mp3 */; };
+		D1708CEF1CC4FF8F0021B421 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1708CEE1CC4FF8E0021B421 /* Genre.swift */; };
+		D1708CF11CC500380021B421 /* MusicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1708CF01CC500380021B421 /* MusicLibrary.swift */; };
 		D18C64FE1CA19EE200504BEF /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */; };
 		D1A8FC0C1CB9750E000B1924 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A8FC0B1CB9750E000B1924 /* HomeController.swift */; };
 		D1AE04B31CBC9995005E31A6 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE04B21CBC9995005E31A6 /* TimerController.swift */; };
@@ -71,6 +73,8 @@
 		D1708CE61CC4179A0021B421 /* pocket-of-sunshine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pocket-of-sunshine.mp3"; sourceTree = "<group>"; };
 		D1708CE81CC418860021B421 /* cloudy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cloudy.mp3; sourceTree = "<group>"; };
 		D1708CEC1CC41C170021B421 /* colors-of-the-wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "colors-of-the-wind.mp3"; sourceTree = "<group>"; };
+		D1708CEE1CC4FF8E0021B421 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		D1708CF01CC500380021B421 /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
 		D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		D1A8FC0B1CB9750E000B1924 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		D1AE04B21CBC9995005E31A6 /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				D1126F7B1CA034EA00C9A956 /* Assets.xcassets */,
 				D1126F7D1CA034EA00C9A956 /* LaunchScreen.storyboard */,
 				D1126F801CA034EA00C9A956 /* Info.plist */,
+				D1708CEE1CC4FF8E0021B421 /* Genre.swift */,
+				D1708CF01CC500380021B421 /* MusicLibrary.swift */,
 			);
 			path = Wakey;
 			sourceTree = "<group>";
@@ -306,8 +312,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1708CEF1CC4FF8F0021B421 /* Genre.swift in Sources */,
 				D13FBBEE1CAB1C90007AA481 /* NetworkOperation.swift in Sources */,
 				D1126F771CA034E900C9A956 /* WeatherDataController.swift in Sources */,
+				D1708CF11CC500380021B421 /* MusicLibrary.swift in Sources */,
 				D1A8FC0C1CB9750E000B1924 /* HomeController.swift in Sources */,
 				D1AE04B31CBC9995005E31A6 /* TimerController.swift in Sources */,
 				D18C64FE1CA19EE200504BEF /* CurrentWeather.swift in Sources */,

@@ -12,6 +12,13 @@ import AVFoundation
 
 class MusicController: UIViewController {
     
+    @IBOutlet weak var genreImageView0: UIImageView!
+    @IBOutlet weak var genreImageView1: UIImageView!
+    @IBOutlet weak var genreImageView2: UIImageView!
+    @IBOutlet weak var genreImageView3: UIImageView!
+    
+    var genreArray: [UIImageView] = []
+    
     
     @IBOutlet weak var playedTimeLabel: UILabel!
     
@@ -22,10 +29,28 @@ class MusicController: UIViewController {
     
     var timer:NSTimer!
     
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // initalize the genreArray
+        genreArray += [genreImageView0, genreImageView1, genreImageView2, genreImageView3]
+        
+        // iterate over genreArray
+        for index in 0..<genreArray.count
+        {
+            let genre = Genre(index: index)
+            let genreImageView = genreArray[index]
+            
+            genreImageView.image = genre.icon
+            
+            
+        }
+        
+        // tapGestureRecognizer
+        //let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        //genreImageView0.userInteractionEnabled = true
+        //genreImageView0.addGestureRecognizer(tapGestureRecognizer)
 
         // Do any additional setup after loading the view.
         
@@ -88,6 +113,28 @@ class MusicController: UIViewController {
         weatherSong.stop()
         weatherSong.currentTime = 0
         isPlaying = false
+    }
+    
+    /*
+    func imageTapped(img: AnyObject)
+    {
+        // Your action
+        print("Image is tapped")
+    }
+    */
+    
+
+    @IBAction func playGenre(sender: AnyObject) {
+        print("Image is tapped")
+        //let imgView = sender.view as! UIImageView
+        
+        
+        let genreImageView = sender.view as! UIImageView
+        
+        let index = genreArray.indexOf(genreImageView)
+        
+        print(index!)
+        
     }
     
 
