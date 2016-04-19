@@ -18,34 +18,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRm-j1-5Hz">
-                                <rect key="frame" x="235" y="186" width="130" height="30"/>
-                                <state key="normal" title="Weather Controller"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cherry" translatesAutoresizingMaskIntoConstraints="NO" id="TEw-Jg-fCF">
+                                <rect key="frame" x="130" y="91" width="340" height="149"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="e2x-WE-gEY"/>
+                                    <constraint firstAttribute="width" constant="340" id="o9B-Y8-6ui"/>
+                                </constraints>
                                 <connections>
-                                    <action selector="showWeatherController:" destination="EHb-nM-hPf" eventType="touchUpInside" id="ckM-wN-DKI"/>
-                                    <segue destination="BYZ-38-t0r" kind="push" identifier="showWeatherDataController" id="f7c-6U-EGa"/>
+                                    <outletCollection property="gestureRecognizers" destination="8CE-o1-bzJ" appends="YES" id="h55-gn-V03"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0D-C0-5YD">
-                                <rect key="frame" x="244" y="285" width="112" height="30"/>
-                                <state key="normal" title="Timer Controller"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plum-blossom" translatesAutoresizingMaskIntoConstraints="NO" id="8Vn-Ag-NzP">
+                                <rect key="frame" x="130" y="427" width="340" height="149"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="HRo-cA-Cve"/>
+                                    <constraint firstAttribute="height" constant="149" id="Isr-CK-pt1"/>
+                                </constraints>
                                 <connections>
-                                    <segue destination="1iv-VU-PxC" kind="push" id="cVb-yy-BhX"/>
+                                    <outletCollection property="gestureRecognizers" destination="goQ-a5-nxD" appends="YES" id="60h-P6-Afq"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhC-qj-jt1">
-                                <rect key="frame" x="244" y="373" width="113" height="30"/>
-                                <state key="normal" title="Music Controller"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maple" translatesAutoresizingMaskIntoConstraints="NO" id="03p-Kc-QNP">
+                                <rect key="frame" x="130" y="259" width="340" height="149"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="06l-Gb-5Je"/>
+                                    <constraint firstAttribute="height" constant="149" id="kd3-TT-arS"/>
+                                </constraints>
                                 <connections>
-                                    <segue destination="n32-Od-3ud" kind="push" id="ZOu-aW-dIJ"/>
+                                    <outletCollection property="gestureRecognizers" destination="uFt-M6-r5W" appends="YES" id="pVs-rg-JlG"/>
                                 </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TEw-Jg-fCF" firstAttribute="centerX" secondItem="gyZ-M8-k4p" secondAttribute="centerX" id="9bP-gL-OOi"/>
+                            <constraint firstItem="TEw-Jg-fCF" firstAttribute="top" secondItem="YnD-rf-6Ks" secondAttribute="bottom" constant="27" id="C3V-6b-1Bv"/>
+                            <constraint firstItem="8Vn-Ag-NzP" firstAttribute="top" secondItem="03p-Kc-QNP" secondAttribute="bottom" constant="19" id="GeI-Wz-BPE"/>
+                            <constraint firstItem="H4U-wc-RE2" firstAttribute="top" secondItem="8Vn-Ag-NzP" secondAttribute="bottom" constant="24" id="MhY-9m-q3X"/>
+                            <constraint firstItem="03p-Kc-QNP" firstAttribute="centerX" secondItem="gyZ-M8-k4p" secondAttribute="centerX" id="OK0-Ue-9W5"/>
+                            <constraint firstItem="03p-Kc-QNP" firstAttribute="top" secondItem="TEw-Jg-fCF" secondAttribute="bottom" constant="19" id="ge6-lP-lB4"/>
+                            <constraint firstItem="8Vn-Ag-NzP" firstAttribute="centerX" secondItem="gyZ-M8-k4p" secondAttribute="centerX" id="itf-42-toE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Wakey" id="XfK-ab-rNw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88h-yj-deM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8CE-o1-bzJ">
+                    <connections>
+                        <action selector="showWeatherController:" destination="EHb-nM-hPf" id="Mnp-9I-jfD"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="showWeatherDataController" id="qvY-Tv-J4W"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="uFt-M6-r5W">
+                    <connections>
+                        <action selector="showTimerController:" destination="EHb-nM-hPf" id="NF2-DA-L15"/>
+                        <segue destination="1iv-VU-PxC" kind="push" identifier="showTimerController" id="nO6-s4-1Qn"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="goQ-a5-nxD">
+                    <connections>
+                        <action selector="showMusicController:" destination="EHb-nM-hPf" id="SL8-6T-hME"/>
+                        <segue destination="n32-Od-3ud" kind="push" identifier="showMusicController" id="WmG-Os-CH6"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1706" y="233"/>
         </scene>
@@ -73,6 +111,10 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsr-pm-128">
                                 <rect key="frame" x="272" y="467" width="56" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="59p-R8-9Ub"/>
+                                    <constraint firstAttribute="width" constant="56" id="fWi-6R-T68"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -120,8 +162,8 @@
                                     <outletCollection property="gestureRecognizers" destination="XvJ-jQ-Lbs" appends="YES" id="JyI-pX-Z2W"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a genre of music to enjoy..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-JS-e37">
-                                <rect key="frame" x="149" y="84" width="302" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Select a genre of music to enjoy..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-JS-e37">
+                                <rect key="frame" x="149" y="40" width="302" height="68"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -285,20 +327,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="sSh-X6-p5w">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="sSh-X6-p5w">
                                 <rect key="frame" x="190" y="152" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="SYp-Oc-Cqw"/>
                                     <constraint firstAttribute="width" constant="60" id="aq8-dN-2Uc"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcatraz Island, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10u-ji-0Dr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Alcatraz Island, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10u-ji-0Dr">
                                 <rect key="frame" x="253" y="171" width="163" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4Y-7r-A7T">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4Y-7r-A7T">
                                 <rect key="frame" x="279" y="94" width="43" height="43"/>
                                 <state key="normal" image="refresh"/>
                                 <connections>
@@ -311,7 +353,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="E3O-sd-NXn">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="E3O-sd-NXn">
                                 <rect key="frame" x="290" y="106" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
@@ -368,7 +410,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How long would you like to sleep?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUh-Or-Slq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How long would you like to sleep?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUh-Or-Slq">
                                 <rect key="frame" x="153" y="160" width="295" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -410,10 +452,10 @@
                                     <action selector="resetTimer:" destination="1iv-VU-PxC" eventType="touchUpInside" id="4BF-xF-IGG"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="2Bh-KR-tpg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="2Bh-KR-tpg">
                                 <rect key="frame" x="285" y="93" width="30" height="30"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qug-FA-xhs">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qug-FA-xhs">
                                 <rect key="frame" x="20" y="221" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -470,10 +512,13 @@
     </scenes>
     <resources>
         <image name="ambient" width="175" height="175"/>
+        <image name="cherry" width="1200" height="803"/>
         <image name="classical" width="512" height="512"/>
         <image name="default" width="30" height="30"/>
         <image name="lullaby" width="252" height="252"/>
+        <image name="maple" width="1920" height="1080"/>
         <image name="nature" width="175" height="175"/>
+        <image name="plum-blossom" width="1200" height="800"/>
         <image name="refresh" width="43" height="43"/>
     </resources>
 </document>

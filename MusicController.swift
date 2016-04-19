@@ -160,4 +160,14 @@ class MusicController: UIViewController {
         // incremeent timer
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime", userInfo: nil, repeats: true)
     }
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+        //
+        currentSong.stop()
+        currentSong.currentTime = 0
+        isPlaying = false
+    }
+   // super.viewWillDisappear(animated)
+    
 }

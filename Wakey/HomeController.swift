@@ -37,8 +37,10 @@ class HomeController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
+    
     */
     
+    /*
     @IBAction func showWeatherController(sender: AnyObject) {
         
         print("Going to showWeatherController")
@@ -47,6 +49,34 @@ class HomeController: UIViewController {
         */
     }
     
+    */
     
+    
+    @IBAction func showWeatherController(sender: AnyObject) {
+        
+        print("Going to WeatherCDataontroller")
+        
+        performSegueWithIdentifier("showWeatherDataController", sender: sender)
+        
+
+    }
+    
+    
+    @IBAction func showTimerController(sender: AnyObject) {
+        
+        print("Going to Controller")
+        
+        performSegueWithIdentifier("showTimerController", sender: sender)
+
+    }
+    
+    
+    @IBAction func showMusicController(sender: AnyObject) {
+        
+        print("Going to Controller")
+        
+        performSegueWithIdentifier("showMusicController", sender: sender)
+
+    }
 
 }
