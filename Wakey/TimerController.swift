@@ -11,10 +11,16 @@ import AVFoundation
 
 class TimerController: UIViewController {
     
+    private let forecastAPIKey = "c6338dd9db43cd95c1ac429b5193b2fc"
+    let coordinate: (lat: Double, long: Double) = (37.8267, -122.423)
+
     
     @IBOutlet weak var userInputField: UITextField!
 
     @IBOutlet weak var timerCountDownLabel: UILabel!
+    
+    
+    @IBOutlet weak var weatherIconLabel: UIImageView!
     
     // create a timer
     var timer = NSTimer()
@@ -25,8 +31,14 @@ class TimerController: UIViewController {
     // create an AVAudioPlayer
     var weatherSong = AVAudioPlayer()
     
+    // create a variable for the title of the song
+    var weatherSongTitle = "nil"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // get the weather
+        retrieveWeatherForecast()
 
         //timerCountDownLabel.text = String(counter)
         // Do any additional setup after loading the view.
@@ -75,7 +87,7 @@ class TimerController: UIViewController {
             timer.invalidate()
             
             // play the song
-            playSong("umbrella.mp3")
+            playSong(weatherSongTitle)
         }
     }
 
@@ -150,25 +162,36 @@ class TimerController: UIViewController {
         self.weatherSong.play()
     }
     
-    func playAlarm() {
-        let path = NSBundle.mainBundle().pathForResource("umbrella.mp3", ofType: nil)
-        
-        //var error:NSError?
-        
-        let url = NSURL(fileURLWithPath: path!)
-        
-        do
+    
+    // function to get weatherData
+    func retrieveWeatherForecast()
+    {
+        let forecastService = ForecastService(APIKey: forecastAPIKey)
+        forecastService.getForecast(coordinate.lat, long: coordinate.long)
         {
-            let song = try AVAudioPlayer(contentsOfURL: url)
-            weatherSong = song
-            
+            (let currently) in
+            if let currentWeather = currently
+            {
+                // update UI
+                dispatch_async(dispatch_get_main_queue())
+                {
+                    // execute closure
+                    
+                    if let icon = currentWeather.icon
+                    {
+                        self.weatherIconLabel?.image = icon
+                    }
+                    
+                    if let song = currentWeather.song
+                    {
+                        self.weatherSongTitle = song
+                        print(self.weatherSongTitle)
+                    }
+                    
+                }
+                print(currentWeather.song)
+            }
         }
-        catch
-        {
-            
-        }
-        
-        weatherSong.play()
     }
 
 

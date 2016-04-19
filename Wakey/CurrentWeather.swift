@@ -59,6 +59,43 @@ enum Icon: String
         
         return UIImage(named: imageName)
     }
+    
+    func getSong() -> String?
+    {
+        var song: String
+        
+        
+        // match the value
+        // pass in rawValue. If it matches, we get value
+        // otherwise, it will not
+        switch self
+        {
+        case .ClearDay:
+            song = "pocket-of-sunshine.mp3"
+        case .ClearNight:
+            song = "dancing-in-the-moonlight.mp3"
+        case .Rain:
+            song = "umbrella.mp3"
+        case .Snow:
+            song = "let-it-snow.mp3"
+        case .Sleet:
+            song = "let-it-snow.mp3"
+        case .Wind:
+            song = "colors-of-the-wind.mp3"
+        case .Fog:
+            song = "when-the-fog-rolls-in.mp3"
+        case .Cloudy:
+            song = "cloudy.mp3"
+        case .PartlyCloudyDay:
+            song = "cloudy.mp3"
+        case .PartlyCloudyNight:
+            song = "cloudy.mp3"
+        }
+        
+        
+        return song
+    }
+
 
 }
 
@@ -69,6 +106,7 @@ struct CurrentWeather
     let precipProbability: Int?
     let summary: String?
     var icon: UIImage? = UIImage(named: "default.png")
+    var song: String?
     
     init(weatherDictionary: [String: AnyObject])
     {
@@ -96,11 +134,15 @@ struct CurrentWeather
             let weatherIcon: Icon = Icon(rawValue: iconString)
             {
                 icon = weatherIcon.toImage()
+                song = weatherIcon.getSong()
             }
-    
-    }
-    
-    
-    
-    
+        
+        /*
+        if let icon = weatherDictionary["icon"] as? String,
+            let title: Icon = Icon(rawValue: icon)
+            {
+                song = title.getSong()
+            }
+        */
    }
+}

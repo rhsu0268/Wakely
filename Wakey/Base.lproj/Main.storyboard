@@ -492,6 +492,7 @@
                     <connections>
                         <outlet property="timerCountDownLabel" destination="6fe-eB-Ox2" id="u1G-cP-u0q"/>
                         <outlet property="userInputField" destination="qug-FA-xhs" id="uZh-AH-hUP"/>
+                        <outlet property="weatherIconLabel" destination="2Bh-KR-tpg" id="FNm-Pq-0Xp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wnu-Il-qGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
