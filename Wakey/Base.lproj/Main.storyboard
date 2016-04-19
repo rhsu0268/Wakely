@@ -62,13 +62,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4E8-sv-uky">
-                                <rect key="frame" x="190" y="510" width="76" height="30"/>
+                                <rect key="frame" x="207" y="510" width="42" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Play/Pause">
+                                <state key="normal" title="Pause">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playOrPauseMusic:" destination="n32-Od-3ud" eventType="touchUpInside" id="5Da-rj-wxe"/>
+                                    <action selector="pauseMusic:" destination="n32-Od-3ud" eventType="touchUpInside" id="F6n-yY-ozD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsr-pm-128">
@@ -87,12 +87,16 @@
                                     <action selector="stopMusic:" destination="n32-Od-3ud" eventType="touchUpInside" id="89G-qU-c7P"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature" translatesAutoresizingMaskIntoConstraints="NO" id="Pin-zw-RQg">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature" translatesAutoresizingMaskIntoConstraints="NO" id="Pin-zw-RQg">
                                 <rect key="frame" x="167" y="124" width="120" height="120"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="eCe-JR-rZj"/>
                                     <constraint firstAttribute="height" constant="120" id="h1M-eE-wcg"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="axG-Gd-hQa" appends="YES" id="hWA-VS-ttU"/>
+                                </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audio-book" translatesAutoresizingMaskIntoConstraints="NO" id="E5T-xg-Sy5">
                                 <rect key="frame" x="325" y="297" width="120" height="120"/>
@@ -105,12 +109,16 @@
                                     <outletCollection property="gestureRecognizers" destination="gLg-g9-80n" appends="YES" id="XGR-Ri-Ucx"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ambient" translatesAutoresizingMaskIntoConstraints="NO" id="2hZ-KH-ESZ">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ambient" translatesAutoresizingMaskIntoConstraints="NO" id="2hZ-KH-ESZ">
                                 <rect key="frame" x="167" y="297" width="120" height="120"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="OPG-8G-7SJ"/>
                                     <constraint firstAttribute="height" constant="120" id="qOW-53-3zg"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XvJ-jQ-Lbs" appends="YES" id="JyI-pX-Z2W"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a genre of music to enjoy..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-JS-e37">
                                 <rect key="frame" x="149" y="84" width="302" height="24"/>
@@ -220,6 +228,16 @@
                 <tapGestureRecognizer id="gLg-g9-80n">
                     <connections>
                         <action selector="playGenre:" destination="n32-Od-3ud" id="Hp5-DE-Ben"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="axG-Gd-hQa">
+                    <connections>
+                        <action selector="playGenre:" destination="n32-Od-3ud" id="dBQ-Zz-fQb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XvJ-jQ-Lbs">
+                    <connections>
+                        <action selector="playGenre:" destination="n32-Od-3ud" id="G6U-6E-yXK"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

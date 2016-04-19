@@ -26,6 +26,10 @@
 		D1708CED1CC41C170021B421 /* colors-of-the-wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1708CEC1CC41C170021B421 /* colors-of-the-wind.mp3 */; };
 		D1708CEF1CC4FF8F0021B421 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1708CEE1CC4FF8E0021B421 /* Genre.swift */; };
 		D1708CF11CC500380021B421 /* MusicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1708CF01CC500380021B421 /* MusicLibrary.swift */; };
+		D1853EB01CC56CD20073354D /* when-the-fog-rolls-in.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1853EAF1CC56CD10073354D /* when-the-fog-rolls-in.mp3 */; };
+		D1853EB21CC56E070073354D /* spring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1853EB11CC56E070073354D /* spring.mp3 */; };
+		D1853EB41CC56FA60073354D /* ambient-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1853EB31CC56FA60073354D /* ambient-music.mp3 */; };
+		D1853EB61CC571220073354D /* baa-baa-black-sheep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1853EB51CC571220073354D /* baa-baa-black-sheep.mp3 */; };
 		D18C64FE1CA19EE200504BEF /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */; };
 		D1A8FC0C1CB9750E000B1924 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A8FC0B1CB9750E000B1924 /* HomeController.swift */; };
 		D1AE04B31CBC9995005E31A6 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE04B21CBC9995005E31A6 /* TimerController.swift */; };
@@ -75,6 +79,10 @@
 		D1708CEC1CC41C170021B421 /* colors-of-the-wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "colors-of-the-wind.mp3"; sourceTree = "<group>"; };
 		D1708CEE1CC4FF8E0021B421 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		D1708CF01CC500380021B421 /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
+		D1853EAF1CC56CD10073354D /* when-the-fog-rolls-in.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "when-the-fog-rolls-in.mp3"; sourceTree = "<group>"; };
+		D1853EB11CC56E070073354D /* spring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spring.mp3; sourceTree = "<group>"; };
+		D1853EB31CC56FA60073354D /* ambient-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ambient-music.mp3"; sourceTree = "<group>"; };
+		D1853EB51CC571220073354D /* baa-baa-black-sheep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "baa-baa-black-sheep.mp3"; sourceTree = "<group>"; };
 		D18C64FD1CA19EE200504BEF /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		D1A8FC0B1CB9750E000B1924 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		D1AE04B21CBC9995005E31A6 /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
@@ -129,6 +137,9 @@
 		D1126F731CA034E900C9A956 /* Wakey */ = {
 			isa = PBXGroup;
 			children = (
+				D1853EAF1CC56CD10073354D /* when-the-fog-rolls-in.mp3 */,
+				D1853EB51CC571220073354D /* baa-baa-black-sheep.mp3 */,
+				D1853EB11CC56E070073354D /* spring.mp3 */,
 				D1708CEC1CC41C170021B421 /* colors-of-the-wind.mp3 */,
 				D1708CE81CC418860021B421 /* cloudy.mp3 */,
 				D1708CE61CC4179A0021B421 /* pocket-of-sunshine.mp3 */,
@@ -136,6 +147,7 @@
 				D1708CE21CC416CB0021B421 /* let-it-snow.mp3 */,
 				D1708CE01CC412D00021B421 /* nature.mp3 */,
 				D15E1F301CC0087D008A2361 /* umbrella.mp3 */,
+				D1853EB31CC56FA60073354D /* ambient-music.mp3 */,
 				D1B0623F1CAC28E1008132C8 /* ForecastService.swift */,
 				D13FBBED1CAB1C90007AA481 /* NetworkOperation.swift */,
 				D1126FA41CA0375200C9A956 /* CurrentWeather.plist */,
@@ -279,13 +291,17 @@
 			files = (
 				D1126F7F1CA034EA00C9A956 /* LaunchScreen.storyboard in Resources */,
 				D1126FA51CA0375200C9A956 /* CurrentWeather.plist in Resources */,
+				D1853EB61CC571220073354D /* baa-baa-black-sheep.mp3 in Resources */,
 				D1708CE31CC416CB0021B421 /* let-it-snow.mp3 in Resources */,
 				D1708CED1CC41C170021B421 /* colors-of-the-wind.mp3 in Resources */,
 				D1708CE11CC412D00021B421 /* nature.mp3 in Resources */,
+				D1853EB01CC56CD20073354D /* when-the-fog-rolls-in.mp3 in Resources */,
 				D1708CE91CC418860021B421 /* cloudy.mp3 in Resources */,
 				D1126F7C1CA034EA00C9A956 /* Assets.xcassets in Resources */,
+				D1853EB21CC56E070073354D /* spring.mp3 in Resources */,
 				D1126F7A1CA034EA00C9A956 /* Main.storyboard in Resources */,
 				D1708CE51CC417360021B421 /* dancing-in-the-moonlight.mp3 in Resources */,
+				D1853EB41CC56FA60073354D /* ambient-music.mp3 in Resources */,
 				D15E1F311CC0087D008A2361 /* umbrella.mp3 in Resources */,
 				D1708CE71CC4179A0021B421 /* pocket-of-sunshine.mp3 in Resources */,
 			);

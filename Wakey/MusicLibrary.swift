@@ -21,19 +21,19 @@ struct MusicLibrary
         [
             "title": "Classical",
             "description": "This is peaceful classical music",
-            "link": "https://www.youtube.com/watch?v=uupzk-YCBO0&list=RDT-ExXFoGeOQ&index=10",
+            "link": "https://www.youtube.com/watch?v=-4kTei0XrCs",
             "icon": "classical.png"
         ],
         [
             "title": "Ambience",
             "description": "This is peaceful ambience music.",
-            "link": "https://www.youtube.com/watch?v=uupzk-YCBO0&list=RDT-ExXFoGeOQ&index=10",
+            "link": "https://www.youtube.com/watch?v=JIZF4zQ-25I",
             "icon": "ambience.png"
         ],
         [
-            "title": "Audio Book",
+            "title": "Lullaby",
             "description": "This is an audio book.",
-            "link": "https://www.youtube.com/watch?v=uupzk-YCBO0&list=RDT-ExXFoGeOQ&index=10",
+            "link": "https://www.youtube.com/watch?v=_LQVvUUgU-E",
             "icon": "audio-book.png"
         ]
         

@@ -23,7 +23,7 @@ class MusicController: UIViewController {
     @IBOutlet weak var playedTimeLabel: UILabel!
     
     // create an AVAudioPlayer
-    var weatherSong = AVAudioPlayer()
+    var currentSong = AVAudioPlayer()
     
     var isPlaying = false
     
@@ -56,22 +56,6 @@ class MusicController: UIViewController {
         
         //trackTitle.text = "umbrella"
         
-        let path = NSBundle.mainBundle().pathForResource("nature.mp3", ofType: nil)
-        
-        //var error:NSError?
-        
-        let url = NSURL(fileURLWithPath: path!)
-        
-        do
-        {
-            let song = try AVAudioPlayer(contentsOfURL: url)
-            weatherSong = song
-            
-        }
-        catch
-        {
-            
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -80,26 +64,20 @@ class MusicController: UIViewController {
     }
     
 
-    @IBAction func playOrPauseMusic(sender: UIButton) {
-        
-        if (isPlaying)
-        {
-            weatherSong.pause()
-            isPlaying = false
-        }
-        else
-        {
-            weatherSong.play()
-            isPlaying = true
-            
-            // incremeent timer
-            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime", userInfo: nil, repeats: true)
-        }
+    
+    
+    
+    
+    
+    @IBAction func pauseMusic(sender: UIButton)
+    {
+        currentSong.pause()
+        isPlaying = false
     }
     
     func updateTime()
     {
-        let currentTime = Int(weatherSong.currentTime)
+        let currentTime = Int(currentSong.currentTime)
         let minutes = currentTime / 60
         let seconds = currentTime - minutes * 60
         
@@ -110,8 +88,8 @@ class MusicController: UIViewController {
     
     @IBAction func stopMusic(sender: UIButton) {
         
-        weatherSong.stop()
-        weatherSong.currentTime = 0
+        currentSong.stop()
+        currentSong.currentTime = 0
         isPlaying = false
     }
     
@@ -133,9 +111,53 @@ class MusicController: UIViewController {
         
         let index = genreArray.indexOf(genreImageView)
         
-        print(index!)
+        print(index)
+        
+        switch (index!)
+        {
+            case 0:
+                print("User selected 0")
+                playGenreSong("nature.mp3")
+            case 1:
+                print("User selected 1")
+                playGenreSong("spring.mp3")
+            case 2:
+                print("User selected 2")
+                playGenreSong("ambient-music.mp3")
+            case 3:
+                print("User selected 3")
+                playGenreSong("baa-baa-black-sheep.mp3")
+            default :
+                print( "default case")
+        }
         
     }
     
-
+    
+    // function to play the song
+    func playGenreSong(songTitle: String)
+    {
+        let path = NSBundle.mainBundle().pathForResource(songTitle, ofType: nil)
+        
+        //var error:NSError?
+        
+        let url = NSURL(fileURLWithPath: path!)
+        
+        do
+        {
+            let song = try AVAudioPlayer(contentsOfURL: url)
+            currentSong = song
+            
+        }
+        catch
+        {
+            
+        }
+        
+        currentSong.play()
+        isPlaying = true
+        
+        // incremeent timer
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime", userInfo: nil, repeats: true)
+    }
 }
