@@ -164,9 +164,12 @@ class MusicController: UIViewController {
     
     override func viewWillDisappear(animated: Bool) {
         //
-        currentSong.stop()
-        currentSong.currentTime = 0
-        isPlaying = false
+        if (isPlaying)
+        {
+            currentSong.stop()
+            currentSong.currentTime = 0
+            isPlaying = false
+        }
     }
    // super.viewWillDisappear(animated)
     

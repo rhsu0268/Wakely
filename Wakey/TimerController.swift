@@ -23,7 +23,7 @@ class TimerController: UIViewController {
     var counter = 10
     
     // create an AVAudioPlayer
-    var weatherSong: AVAudioPlayer!
+    var weatherSong = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,11 +51,13 @@ class TimerController: UIViewController {
         timer.invalidate()
         
         // stop the song
+        /*
         if weatherSong != nil
         {
             weatherSong.stop()
             weatherSong = nil
         }
+        */
     }
     
     // method that is called when the timer fires
@@ -70,22 +72,10 @@ class TimerController: UIViewController {
         {
             timerCountDownLabel.text = "Wake up!"
             
+            timer.invalidate()
+            
             // play the song
-            let path = NSBundle.mainBundle().pathForResource("umbrella.mp3", ofType: nil)
-            
-            let url = NSURL(fileURLWithPath: path!)
-            
-            do
-            {
-                let sound = try AVAudioPlayer(contentsOfURL: url)
-                weatherSong = sound
-                sound.play()
-            }
-            catch
-            {
-                
-            }
-            
+            playSong("umbrella.mp3")
         }
     }
 
@@ -114,6 +104,9 @@ class TimerController: UIViewController {
             timerCountDownLabel.text = "Timer started!"
             //timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateCounter"), userInfo: nil, repeats: true)
             timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateCounter:"), userInfo: nil, repeats: true)
+            
+            //timer = NSTimer(fireDate: NSDate(timeIntervalSinceNow: 20), interval: 60.0, target: self, selector: Selector("playAlarm"), userInfo: nil, repeats: false)
+           //NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSDefaultRunLoopMode)
         }
         
     }
@@ -133,6 +126,51 @@ class TimerController: UIViewController {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
+    
+    func playSong(songTitle: String)
+    {
+        let path = NSBundle.mainBundle().pathForResource(songTitle, ofType: nil)
+        
+        //var error:NSError?
+        
+        let url = NSURL(fileURLWithPath: path!)
+        
+        do
+        {
+            let song = try AVAudioPlayer(contentsOfURL: url)
+            self.weatherSong = song
+            
+        }
+        catch
+        {
+            
+        }
+        //let loadingTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1))
+        
+        self.weatherSong.play()
+    }
+    
+    func playAlarm() {
+        let path = NSBundle.mainBundle().pathForResource("umbrella.mp3", ofType: nil)
+        
+        //var error:NSError?
+        
+        let url = NSURL(fileURLWithPath: path!)
+        
+        do
+        {
+            let song = try AVAudioPlayer(contentsOfURL: url)
+            weatherSong = song
+            
+        }
+        catch
+        {
+            
+        }
+        
+        weatherSong.play()
+    }
+
 
     
     
