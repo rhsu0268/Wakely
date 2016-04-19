@@ -34,7 +34,7 @@ struct MusicLibrary
             "title": "Lullaby",
             "description": "This is an audio book.",
             "link": "https://www.youtube.com/watch?v=_LQVvUUgU-E",
-            "icon": "audio-book.png"
+            "icon": "lullaby.png"
         ]
         
     

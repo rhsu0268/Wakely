@@ -98,7 +98,7 @@
                                     <outletCollection property="gestureRecognizers" destination="axG-Gd-hQa" appends="YES" id="hWA-VS-ttU"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audio-book" translatesAutoresizingMaskIntoConstraints="NO" id="E5T-xg-Sy5">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lullaby" translatesAutoresizingMaskIntoConstraints="NO" id="E5T-xg-Sy5">
                                 <rect key="frame" x="325" y="297" width="120" height="120"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -156,16 +156,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio Book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAY-PY-agb">
-                                <rect key="frame" x="341" y="425" width="88" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="4YS-CS-Wiw"/>
-                                    <constraint firstAttribute="width" constant="88" id="hV0-CV-Yil"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="classical" translatesAutoresizingMaskIntoConstraints="NO" id="Rko-q2-n3S">
                                 <rect key="frame" x="325" y="124" width="120" height="120"/>
                                 <gestureRecognizers/>
@@ -177,6 +167,16 @@
                                     <outletCollection property="gestureRecognizers" destination="bdQ-W9-Dfu" appends="YES" id="NI6-rf-tfP"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lullaby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAY-PY-agb">
+                                <rect key="frame" x="361" y="425" width="48" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="4YS-CS-Wiw"/>
+                                    <constraint firstAttribute="width" constant="48" id="hV0-CV-Yil"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1899721489" green="0.89206349200000001" blue="0.49931132789999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -470,9 +470,9 @@
     </scenes>
     <resources>
         <image name="ambient" width="175" height="175"/>
-        <image name="audio-book" width="300" height="300"/>
         <image name="classical" width="512" height="512"/>
         <image name="default" width="30" height="30"/>
+        <image name="lullaby" width="252" height="252"/>
         <image name="nature" width="175" height="175"/>
         <image name="refresh" width="43" height="43"/>
     </resources>
