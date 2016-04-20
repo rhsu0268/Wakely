@@ -393,6 +393,7 @@
                     <navigationItem key="navigationItem" title="Weather" id="m4T-0p-dqg"/>
                     <connections>
                         <outlet property="activityIndicator" destination="E3O-sd-NXn" id="ZnE-qg-PqE"/>
+                        <outlet property="cityNameLabel" destination="10u-ji-0Dr" id="ZE9-dW-7Hw"/>
                         <outlet property="currentHumidityLabel" destination="NKL-OP-16k" id="9t1-Yw-VnV"/>
                         <outlet property="currentPrecipitationLabel" destination="aJU-Ch-bif" id="8sH-6z-rva"/>
                         <outlet property="currentTemperatureLabel" destination="bqw-Pc-4aY" id="8lr-Ko-N5p"/>

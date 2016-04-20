@@ -40,6 +40,10 @@ class WeatherDataController: UIViewController, CLLocationManagerDelegate {
     var latitude: String!
     var longitude: String!
     
+    
+    @IBOutlet weak var cityNameLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -57,7 +61,7 @@ class WeatherDataController: UIViewController, CLLocationManagerDelegate {
         
         
         
-        retrieveWeatherForecast()
+        
       
         }
         
@@ -113,7 +117,7 @@ class WeatherDataController: UIViewController, CLLocationManagerDelegate {
     func retrieveWeatherForecast()
     {
         let forecastService = ForecastService(APIKey: forecastAPIKey)
-        forecastService.getForecast(coordinate.lat, long: coordinate.long)
+        forecastService.getForecast(Double(latitude)!, long: Double(longitude)!)
         {
             (let currently) in
             if let currentWeather = currently
@@ -195,7 +199,31 @@ class WeatherDataController: UIViewController, CLLocationManagerDelegate {
             print("Found user's location: \(location)")
             print("Latitude: \(location.coordinate.latitude)")
             print("Longitude: \(location.coordinate.longitude)")
+            
+            latitude = "\(location.coordinate.latitude)"
+            longitude = "\(location.coordinate.longitude)"
         }
+        
+        retrieveWeatherForecast()
+        
+        let userLocation = CLLocation(latitude: Double(latitude)!, longitude: Double(longitude)!)
+        print(userLocation)
+        
+        CLGeocoder().reverseGeocodeLocation(userLocation, completionHandler: {(placemarks, error) -> Void in
+            print(userLocation)
+            
+            
+            
+            if placemarks!.count > 0 {
+                let pm = placemarks![0] as CLPlacemark
+                print(pm.locality)
+                self.cityNameLabel?.text = pm.locality!
+            }
+            else {
+                print("Problem with the data received from geocoder")
+            }
+        })
+        
         
     }
     

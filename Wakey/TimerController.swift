@@ -22,6 +22,8 @@ class TimerController: UIViewController {
     
     @IBOutlet weak var weatherIconLabel: UIImageView!
     
+    
+    
     // create a timer
     var timer = NSTimer()
     
