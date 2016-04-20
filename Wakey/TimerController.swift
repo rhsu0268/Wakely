@@ -34,6 +34,11 @@ class TimerController: UIViewController {
     // create a variable for the title of the song
     var weatherSongTitle = "nil"
     
+    // boolean for whether the weather song is playing
+    var isPlaying = false
+    
+    var timerStopped = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,13 +68,13 @@ class TimerController: UIViewController {
         timer.invalidate()
         
         // stop the song
-        /*
-        if weatherSong != nil
+        
+        if (isPlaying)
         {
             weatherSong.stop()
-            weatherSong = nil
         }
-        */
+        
+        timerStopped = true
     }
     
     // method that is called when the timer fires
@@ -86,8 +91,13 @@ class TimerController: UIViewController {
             
             timer.invalidate()
             
+            // reset timerStopped boolean
+            //timerStopped = false
+            
             // play the song
             playSong(weatherSongTitle)
+            
+            
         }
     }
 
@@ -104,6 +114,11 @@ class TimerController: UIViewController {
             alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
             
             self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        else if (timerStopped)
+        {
+            timerCountDownLabel.text = "Started again!"
+            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("updateCounter:"), userInfo: nil, repeats: true)
         }
         else
         {
@@ -127,6 +142,12 @@ class TimerController: UIViewController {
     @IBAction func resetTimer(sender: UIButton) {
         
         timer.invalidate()
+        
+        if (isPlaying)
+        {
+            weatherSong.stop()
+        }
+
         
         // reset the counter
         counter = 10
@@ -160,6 +181,7 @@ class TimerController: UIViewController {
         //let loadingTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1))
         
         self.weatherSong.play()
+        isPlaying = true
     }
     
     
