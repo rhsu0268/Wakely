@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class WeatherDataController: UIViewController {
+class WeatherDataController: UIViewController, CLLocationManagerDelegate {
     
     
     @IBOutlet weak var currentTemperatureLabel: UILabel?
@@ -32,9 +33,30 @@ class WeatherDataController: UIViewController {
 
     let coordinate: (lat: Double, long: Double) = (37.8267, -122.423)
     
+    var locationManager: CLLocationManager!
+    var geoCoder: CLGeocoder!
+    var placemark: CLPlacemark!
+    
+    var latitude: String!
+    var longitude: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        // Core Location Manager asks for GPS location
+        self.locationManager = CLLocationManager()
+        locationManager.requestAlwaysAuthorization()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+        
+        //geoCoder = CLGeocoder()
+        //placemark = CLPlacemark()
+        
+        
+        
         retrieveWeatherForecast()
       
         }
@@ -151,6 +173,32 @@ class WeatherDataController: UIViewController {
             activityIndicator?.stopAnimating()
         }
     }
+    
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError)
+    {
+        locationManager.stopUpdatingLocation()
+        print("An error occured!")
+        print(error)
+        
+    }
+    
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        //let location = locations.last as CLLocation!
+        //let currentLocation : CLLocation = newLocation
+        //latitude = "\(currentLocation.coordinate.latitude)"
+        //longitude = "\(currentLocation.coordinate.longitude)"
+        print("Inside locationManager")
+        if let location = locations.first {
+            print("Found user's location: \(location)")
+            print("Latitude: \(location.coordinate.latitude)")
+            print("Longitude: \(location.coordinate.longitude)")
+        }
+        
+    }
+    
     
     
 }
