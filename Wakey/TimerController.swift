@@ -8,8 +8,9 @@
 
 import UIKit
 import AVFoundation
+import CoreLocation
 
-class TimerController: UIViewController {
+class TimerController: UIViewController, CLLocationManagerDelegate {
     
     private let forecastAPIKey = "c6338dd9db43cd95c1ac429b5193b2fc"
     let coordinate: (lat: Double, long: Double) = (37.8267, -122.423)
@@ -41,11 +42,24 @@ class TimerController: UIViewController {
     
     var timerStopped = false
     
+    // create a new locationManager
+    var locationManager: CLLocationManager!
+    
+    var latitude: String!
+    var longitude: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Core Location Manager asks for GPS location
+        self.locationManager = CLLocationManager()
+        locationManager.requestAlwaysAuthorization()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+        
         // get the weather
-        retrieveWeatherForecast()
+        //retrieveWeatherForecast()
 
         //timerCountDownLabel.text = String(counter)
         // Do any additional setup after loading the view.
@@ -191,7 +205,7 @@ class TimerController: UIViewController {
     func retrieveWeatherForecast()
     {
         let forecastService = ForecastService(APIKey: forecastAPIKey)
-        forecastService.getForecast(coordinate.lat, long: coordinate.long)
+        forecastService.getForecast(Double(latitude)!, long: Double(longitude)!)
         {
             (let currently) in
             if let currentWeather = currently
@@ -217,6 +231,35 @@ class TimerController: UIViewController {
             }
         }
     }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError)
+    {
+        locationManager.stopUpdatingLocation()
+        print("An error occured!")
+        print(error)
+        
+    }
+    
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        //let location = locations.last as CLLocation!
+        //let currentLocation : CLLocation = newLocation
+        //latitude = "\(currentLocation.coordinate.latitude)"
+        //longitude = "\(currentLocation.coordinate.longitude)"
+        print("Inside locationManager")
+        if let location = locations.first {
+            print("Found user's location: \(location)")
+            print("Latitude: \(location.coordinate.latitude)")
+            print("Longitude: \(location.coordinate.longitude)")
+            
+            latitude = "\(location.coordinate.latitude)"
+            longitude = "\(location.coordinate.longitude)"
+        }
+        
+        retrieveWeatherForecast()
+    }
+
 
 
     
