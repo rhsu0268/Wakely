@@ -117,42 +117,54 @@ class WeatherDataController: UIViewController, CLLocationManagerDelegate {
     func retrieveWeatherForecast()
     {
         let forecastService = ForecastService(APIKey: forecastAPIKey)
-        forecastService.getForecast(Double(latitude)!, long: Double(longitude)!)
+        
+        if (latitude == nil || longitude == nil)
         {
-            (let currently) in
-            if let currentWeather = currently
+            let alertController = UIAlertController(title: "Error", message:
+                "Please enter how long you want to sleep...", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        else
+        {
+            forecastService.getForecast(Double(latitude)!, long: Double(longitude)!)
             {
-                // update UI
-                dispatch_async(dispatch_get_main_queue())
+                (let currently) in
+                if let currentWeather = currently
                 {
-                    // execute closure
-                    if let temperature = currentWeather.temperature
+                    // update UI
+                    dispatch_async(dispatch_get_main_queue())
                     {
-                        self.currentTemperatureLabel?.text = "\(temperature)º"
+                        // execute closure
+                        if let temperature = currentWeather.temperature
+                        {
+                            self.currentTemperatureLabel?.text = "\(temperature)º"
+                        }
+                        
+                        if let humidity = currentWeather.humidity
+                        {
+                            self.currentHumidityLabel?.text = "\(humidity)%"
+                        }
+                        
+                        if let precipitation = currentWeather.precipProbability
+                        {
+                            self.currentHumidityLabel?.text = "\(precipitation)%"
+                        }
+                        
+                        if let icon = currentWeather.icon
+                        {
+                            self.currentWeatherIcon?.image = icon
+                        }
+                        
+                        if let summary = currentWeather.summary
+                        {
+                            self.currentWeatherSummary?.text = summary
+                        }
+                        
+                        // stop animating
+                        self.toggleRefreshAnimation(false)
                     }
-                    
-                    if let humidity = currentWeather.humidity
-                    {
-                        self.currentHumidityLabel?.text = "\(humidity)%"
-                    }
-                    
-                    if let precipitation = currentWeather.precipProbability
-                    {
-                        self.currentHumidityLabel?.text = "\(precipitation)%"
-                    }
-                    
-                    if let icon = currentWeather.icon
-                    {
-                        self.currentWeatherIcon?.image = icon
-                    }
-                    
-                    if let summary = currentWeather.summary
-                    {
-                        self.currentWeatherSummary?.text = summary
-                    }
-                    
-                    // stop animating
-                    self.toggleRefreshAnimation(false)
                 }
             }
         }
