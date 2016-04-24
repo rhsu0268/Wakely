@@ -14,6 +14,27 @@
 		D1C9741A1CCBFEA600397306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C974181CCBFEA600397306 /* LaunchScreen.storyboard */; };
 		D1C974251CCBFEA700397306 /* WakelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C974241CCBFEA700397306 /* WakelyTests.swift */; };
 		D1C974301CCBFEA700397306 /* WakelyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C9742F1CCBFEA700397306 /* WakelyUITests.swift */; };
+		D1C9743E1CCBFEC000397306 /* ambient-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1C9743D1CCBFEC000397306 /* ambient-music.mp3 */; };
+		D1C974401CCBFEC900397306 /* baa-baa-black-sheep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1C9743F1CCBFEC900397306 /* baa-baa-black-sheep.mp3 */; };
+		D1C974421CCBFED100397306 /* cloudy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1C974411CCBFED100397306 /* cloudy.mp3 */; };
+		D1C974441CCBFED800397306 /* colors-of-the-wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1C974431CCBFED800397306 /* colors-of-the-wind.mp3 */; };
+		D1C974461CCBFEE600397306 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C974451CCBFEE600397306 /* CurrentWeather.swift */; };
+		D1C974481CCBFEF700397306 /* dancing-in-the-moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1C974471CCBFEF700397306 /* dancing-in-the-moonlight.mp3 */; };
+		D1C9744A1CCBFF0A00397306 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C974491CCBFF0A00397306 /* ForecastService.swift */; };
+		D1C9744C1CCBFF4700397306 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C9744B1CCBFF4700397306 /* Genre.swift */; };
+		D1C9744E1CCBFF4F00397306 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C9744D1CCBFF4F00397306 /* HomeController.swift */; };
+		D1C974501CCBFF5900397306 /* let-it-snow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1C9744F1CCBFF5900397306 /* let-it-snow.mp3 */; };
+		D1C974521CCBFF6200397306 /* MusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C974511CCBFF6200397306 /* MusicController.swift */; };
+		D1C974541CCBFF6800397306 /* MusicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C974531CCBFF6800397306 /* MusicLibrary.swift */; };
+		D1C974561CCBFF7500397306 /* nature.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1C974551CCBFF7500397306 /* nature.mp3 */; };
+		D1C974581CCBFFBE00397306 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C974571CCBFFBE00397306 /* NetworkOperation.swift */; };
+		D1C9745A1CCBFFC600397306 /* PeacefulMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C974591CCBFFC600397306 /* PeacefulMusicController.swift */; };
+		D1C9745C1CCC00D400397306 /* when-the-fog-rolls-in.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1C9745B1CCC00D400397306 /* when-the-fog-rolls-in.mp3 */; };
+		D1C9745E1CCC00E000397306 /* spring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1C9745D1CCC00E000397306 /* spring.mp3 */; };
+		D1C974601CCC00F100397306 /* pocket-of-sunshine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1C9745F1CCC00F100397306 /* pocket-of-sunshine.mp3 */; };
+		D1C974621CCC011300397306 /* umbrella.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1C974611CCC011300397306 /* umbrella.mp3 */; };
+		D1C974641CCC013800397306 /* WeatherDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C974631CCC013800397306 /* WeatherDataController.swift */; };
+		D1C974661CCC014700397306 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C974651CCC014600397306 /* TimerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +68,27 @@
 		D1C9742B1CCBFEA700397306 /* WakelyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakelyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C9742F1CCBFEA700397306 /* WakelyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakelyUITests.swift; sourceTree = "<group>"; };
 		D1C974311CCBFEA700397306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1C9743D1CCBFEC000397306 /* ambient-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ambient-music.mp3"; sourceTree = "<group>"; };
+		D1C9743F1CCBFEC900397306 /* baa-baa-black-sheep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "baa-baa-black-sheep.mp3"; sourceTree = "<group>"; };
+		D1C974411CCBFED100397306 /* cloudy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cloudy.mp3; sourceTree = "<group>"; };
+		D1C974431CCBFED800397306 /* colors-of-the-wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "colors-of-the-wind.mp3"; sourceTree = "<group>"; };
+		D1C974451CCBFEE600397306 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		D1C974471CCBFEF700397306 /* dancing-in-the-moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "dancing-in-the-moonlight.mp3"; sourceTree = "<group>"; };
+		D1C974491CCBFF0A00397306 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		D1C9744B1CCBFF4700397306 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		D1C9744D1CCBFF4F00397306 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		D1C9744F1CCBFF5900397306 /* let-it-snow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "let-it-snow.mp3"; sourceTree = "<group>"; };
+		D1C974511CCBFF6200397306 /* MusicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicController.swift; sourceTree = "<group>"; };
+		D1C974531CCBFF6800397306 /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
+		D1C974551CCBFF7500397306 /* nature.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nature.mp3; sourceTree = "<group>"; };
+		D1C974571CCBFFBE00397306 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		D1C974591CCBFFC600397306 /* PeacefulMusicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeacefulMusicController.swift; sourceTree = "<group>"; };
+		D1C9745B1CCC00D400397306 /* when-the-fog-rolls-in.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "when-the-fog-rolls-in.mp3"; sourceTree = "<group>"; };
+		D1C9745D1CCC00E000397306 /* spring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spring.mp3; sourceTree = "<group>"; };
+		D1C9745F1CCC00F100397306 /* pocket-of-sunshine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pocket-of-sunshine.mp3"; sourceTree = "<group>"; };
+		D1C974611CCC011300397306 /* umbrella.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = umbrella.mp3; sourceTree = "<group>"; };
+		D1C974631CCC013800397306 /* WeatherDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataController.swift; sourceTree = "<group>"; };
+		D1C974651CCC014600397306 /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +139,29 @@
 		D1C9740E1CCBFEA600397306 /* Wakely */ = {
 			isa = PBXGroup;
 			children = (
+				D1C9743D1CCBFEC000397306 /* ambient-music.mp3 */,
+				D1C9743F1CCBFEC900397306 /* baa-baa-black-sheep.mp3 */,
+				D1C974411CCBFED100397306 /* cloudy.mp3 */,
+				D1C974431CCBFED800397306 /* colors-of-the-wind.mp3 */,
+				D1C974471CCBFEF700397306 /* dancing-in-the-moonlight.mp3 */,
+				D1C9744F1CCBFF5900397306 /* let-it-snow.mp3 */,
+				D1C9745F1CCC00F100397306 /* pocket-of-sunshine.mp3 */,
+				D1C9745D1CCC00E000397306 /* spring.mp3 */,
+				D1C9745B1CCC00D400397306 /* when-the-fog-rolls-in.mp3 */,
+				D1C974451CCBFEE600397306 /* CurrentWeather.swift */,
+				D1C974491CCBFF0A00397306 /* ForecastService.swift */,
+				D1C9744B1CCBFF4700397306 /* Genre.swift */,
+				D1C9744D1CCBFF4F00397306 /* HomeController.swift */,
+				D1C974511CCBFF6200397306 /* MusicController.swift */,
 				D1C9740F1CCBFEA600397306 /* AppDelegate.swift */,
 				D1C974111CCBFEA600397306 /* ViewController.swift */,
+				D1C974531CCBFF6800397306 /* MusicLibrary.swift */,
+				D1C974571CCBFFBE00397306 /* NetworkOperation.swift */,
+				D1C974591CCBFFC600397306 /* PeacefulMusicController.swift */,
+				D1C974651CCC014600397306 /* TimerController.swift */,
+				D1C974631CCC013800397306 /* WeatherDataController.swift */,
+				D1C974551CCBFF7500397306 /* nature.mp3 */,
+				D1C974611CCC011300397306 /* umbrella.mp3 */,
 				D1C974131CCBFEA600397306 /* Main.storyboard */,
 				D1C974161CCBFEA600397306 /* Assets.xcassets */,
 				D1C974181CCBFEA600397306 /* LaunchScreen.storyboard */,
@@ -193,6 +256,7 @@
 				TargetAttributes = {
 					D1C9740B1CCBFEA600397306 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 567LHK993X;
 					};
 					D1C9741F1CCBFEA600397306 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -230,7 +294,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1C9741A1CCBFEA600397306 /* LaunchScreen.storyboard in Resources */,
+				D1C974441CCBFED800397306 /* colors-of-the-wind.mp3 in Resources */,
+				D1C9743E1CCBFEC000397306 /* ambient-music.mp3 in Resources */,
+				D1C9745E1CCC00E000397306 /* spring.mp3 in Resources */,
+				D1C974621CCC011300397306 /* umbrella.mp3 in Resources */,
+				D1C974401CCBFEC900397306 /* baa-baa-black-sheep.mp3 in Resources */,
 				D1C974171CCBFEA600397306 /* Assets.xcassets in Resources */,
+				D1C9745C1CCC00D400397306 /* when-the-fog-rolls-in.mp3 in Resources */,
+				D1C974601CCC00F100397306 /* pocket-of-sunshine.mp3 in Resources */,
+				D1C974561CCBFF7500397306 /* nature.mp3 in Resources */,
+				D1C974501CCBFF5900397306 /* let-it-snow.mp3 in Resources */,
+				D1C974421CCBFED100397306 /* cloudy.mp3 in Resources */,
+				D1C974481CCBFEF700397306 /* dancing-in-the-moonlight.mp3 in Resources */,
 				D1C974151CCBFEA600397306 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +331,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1C9744A1CCBFF0A00397306 /* ForecastService.swift in Sources */,
 				D1C974121CCBFEA600397306 /* ViewController.swift in Sources */,
+				D1C9744E1CCBFF4F00397306 /* HomeController.swift in Sources */,
+				D1C974541CCBFF6800397306 /* MusicLibrary.swift in Sources */,
+				D1C974461CCBFEE600397306 /* CurrentWeather.swift in Sources */,
+				D1C974661CCC014700397306 /* TimerController.swift in Sources */,
+				D1C974521CCBFF6200397306 /* MusicController.swift in Sources */,
 				D1C974101CCBFEA600397306 /* AppDelegate.swift in Sources */,
+				D1C974641CCC013800397306 /* WeatherDataController.swift in Sources */,
+				D1C974581CCBFFBE00397306 /* NetworkOperation.swift in Sources */,
+				D1C9745A1CCBFFC600397306 /* PeacefulMusicController.swift in Sources */,
+				D1C9744C1CCBFF4700397306 /* Genre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +482,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Wakely/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RH.Wakely;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -408,10 +496,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Wakely/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RH.Wakely;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -482,6 +573,7 @@
 				D1C974361CCBFEA700397306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1C974371CCBFEA700397306 /* Build configuration list for PBXNativeTarget "WakelyTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +582,7 @@
 				D1C974391CCBFEA700397306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1C9743A1CCBFEA700397306 /* Build configuration list for PBXNativeTarget "WakelyUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +591,7 @@
 				D1C9743C1CCBFEA700397306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
