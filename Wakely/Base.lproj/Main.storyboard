@@ -53,24 +53,27 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm Clock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEN-3B-Kap">
                                 <rect key="frame" x="259" y="325" width="82" height="17"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="0.14814814814814814" green="0.14814814814814814" blue="0.14814814814814814" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoC-vi-8wV">
+                                <rect key="frame" x="257" y="457" width="86" height="17"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhh-of-sTs">
-                                <rect key="frame" x="264" y="189" width="73" height="21"/>
+                                <rect key="frame" x="272" y="191" width="56" height="17"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="4H5-Gl-pAl"/>
-                                    <constraint firstAttribute="height" constant="21" id="TcR-Yf-yax"/>
+                                    <constraint firstAttribute="width" constant="56" id="4H5-Gl-pAl"/>
+                                    <constraint firstAttribute="height" constant="17" id="TcR-Yf-yax"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoC-vi-8wV">
-                                <rect key="frame" x="257" y="457" width="86" height="17"/>
-                                <color key="tintColor" red="1" green="1" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -82,7 +85,7 @@
                             <constraint firstItem="FoC-vi-8wV" firstAttribute="centerX" secondItem="rpN-aa-STv" secondAttribute="centerX" id="2ae-cY-CA1"/>
                             <constraint firstItem="kwP-6W-lQ9" firstAttribute="top" secondItem="m4h-m5-8Z3" secondAttribute="bottom" constant="8" id="5cw-vV-X06"/>
                             <constraint firstItem="m4h-m5-8Z3" firstAttribute="centerY" secondItem="rpN-aa-STv" secondAttribute="centerY" constant="33.5" id="8ia-mu-J0c"/>
-                            <constraint firstItem="Vhh-of-sTs" firstAttribute="top" secondItem="HW8-Az-tRa" secondAttribute="bottom" constant="-66" id="Gdn-Pd-rxA"/>
+                            <constraint firstItem="Vhh-of-sTs" firstAttribute="top" secondItem="HW8-Az-tRa" secondAttribute="bottom" constant="-64" id="Gdn-Pd-rxA"/>
                             <constraint firstItem="m4h-m5-8Z3" firstAttribute="centerX" secondItem="rpN-aa-STv" secondAttribute="centerX" constant="0.5" id="JAT-8c-qCi"/>
                             <constraint firstItem="kwP-6W-lQ9" firstAttribute="top" secondItem="m4h-m5-8Z3" secondAttribute="bottom" constant="21" id="Uay-Fh-Pnj"/>
                             <constraint firstItem="kwP-6W-lQ9" firstAttribute="top" secondItem="m4h-m5-8Z3" secondAttribute="bottom" constant="26" id="Z4x-QG-jvi"/>
