@@ -29,6 +29,10 @@ class MusicController: UIViewController {
     
     var timer:NSTimer!
     
+    var currentSongSelected = false
+    
+    var isPause = false
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,8 +75,29 @@ class MusicController: UIViewController {
     
     @IBAction func pauseMusic(sender: UIButton)
     {
-        currentSong.pause()
-        isPlaying = false
+        if (isPlaying)
+        {
+            currentSong.pause()
+             isPlaying = false
+            isPause = true
+        }
+        //currentSong.pause()
+        ///isPlaying = false
+        //isPause = true
+        
+        /*
+        if (isPlaying)
+        {
+            currentSong.pause()
+            isPlaying = false
+        }
+        else
+        {
+            currentSong.play()
+            isPlaying = true
+        }
+        */
+        
     }
     
     func updateTime()
@@ -88,9 +113,12 @@ class MusicController: UIViewController {
     
     @IBAction func stopMusic(sender: UIButton) {
         
-        currentSong.stop()
-        currentSong.currentTime = 0
-        isPlaying = false
+        if (isPlaying)
+        {
+            currentSong.stop()
+            currentSong.currentTime = 0
+            isPlaying = false
+        }
     }
     
     /*
@@ -103,32 +131,41 @@ class MusicController: UIViewController {
     
 
     @IBAction func playGenre(sender: AnyObject) {
+        
+        
         print("Image is tapped")
         //let imgView = sender.view as! UIImageView
-        
-        
-        let genreImageView = sender.view as! UIImageView
-        
-        let index = genreArray.indexOf(genreImageView)
-        
-        print(index)
-        
-        switch (index!)
+        if (isPause)
         {
-            case 0:
-                print("User selected 0")
-                playGenreSong("nature.mp3")
-            case 1:
-                print("User selected 1")
-                playGenreSong("spring.mp3")
-            case 2:
-                print("User selected 2")
-                playGenreSong("ambient-music.mp3")
-            case 3:
-                print("User selected 3")
-                playGenreSong("baa-baa-black-sheep.mp3")
-            default :
-                print( "default case")
+            currentSong.play()
+            isPause = false
+        }
+        else
+        {
+        
+            let genreImageView = sender.view as! UIImageView
+            
+            let index = genreArray.indexOf(genreImageView)
+            
+            print(index)
+        
+            switch (index!)
+            {
+                case 0:
+                    print("User selected 0")
+                    playGenreSong("nature.mp3")
+                case 1:
+                    print("User selected 1")
+                    playGenreSong("spring.mp3")
+                case 2:
+                    print("User selected 2")
+                    playGenreSong("ambient-music.mp3")
+                case 3:
+                    print("User selected 3")
+                    playGenreSong("baa-baa-black-sheep.mp3")
+                default :
+                    print( "default case")
+            }
         }
         
     }
@@ -137,6 +174,7 @@ class MusicController: UIViewController {
     // function to play the song
     func playGenreSong(songTitle: String)
     {
+        
         let path = NSBundle.mainBundle().pathForResource(songTitle, ofType: nil)
         
         //var error:NSError?
