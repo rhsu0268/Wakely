@@ -26,3 +26,13 @@ The Music player function allows users to choose a a genre of music that will he
 2. Classical: Vivaldi's Spring from Four Seasons
 3. Ambience: Clear Night
 4. Lullaby: Baa Baa Black Sheep
+
+
+## Renaming File Procedure for App Submission
+
+1. In the Project Navigator (left side of Xcode, click the Folder icon), select your project name (the blue file icon at the top).
+2. Select your application under the Targets section.
+3. Click on the Build Settings tab.
+4. Search for "Product Name."
+5. Double-click on the right column where it has the name of your target currently and then replace "$(TARGET_NAME)" with your full name.
+6. Build to the device.
