@@ -227,13 +227,13 @@ class WeatherDataController: UIViewController, CLLocationManagerDelegate {
         
         CLGeocoder().reverseGeocodeLocation(userLocation, completionHandler: {(placemarks, error) -> Void in
             print(userLocation)
-            
-            
-            
-            if placemarks!.count > 0 {
-                let pm = placemarks![0] as CLPlacemark
-                print(pm.locality)
-                self.cityNameLabel?.text = pm.locality!
+            if (placemarks != nil)
+            {
+                if placemarks!.count > 0 {
+                    let pm = placemarks![0] as CLPlacemark
+                    print(pm.locality)
+                    self.cityNameLabel?.text = pm.locality!
+                }
             }
             else {
                 print("Problem with the data received from geocoder")

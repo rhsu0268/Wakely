@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// enum type is string 
 enum Icon: String
 {
     // ten members for ten possible values
@@ -130,7 +131,7 @@ struct CurrentWeather
         }
         summary = weatherDictionary["summary"] as? String
         
-        
+        // check that it exists
         if let iconString = weatherDictionary["icon"] as? String,
             let weatherIcon: Icon = Icon(rawValue: iconString)
             {
