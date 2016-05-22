@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D1C9740B1CCBFEA600397306"
-               BuildableName = "Wakely.app"
+               BuildableName = "Richard_Hsu.app"
                BlueprintName = "Wakely"
                ReferencedContainer = "container:Wakely.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D1C9740B1CCBFEA600397306"
-            BuildableName = "Wakely.app"
+            BuildableName = "Richard_Hsu.app"
             BlueprintName = "Wakely"
             ReferencedContainer = "container:Wakely.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D1C9740B1CCBFEA600397306"
-            BuildableName = "Wakely.app"
+            BuildableName = "Richard_Hsu.app"
             BlueprintName = "Wakely"
             ReferencedContainer = "container:Wakely.xcodeproj">
          </BuildableReference>
@@ -99,7 +99,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D1C9740B1CCBFEA600397306"
-            BuildableName = "Wakely.app"
+            BuildableName = "Richard_Hsu.app"
             BlueprintName = "Wakely"
             ReferencedContainer = "container:Wakely.xcodeproj">
          </BuildableReference>
