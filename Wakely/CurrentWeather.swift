@@ -101,6 +101,7 @@ enum Icon: String
 
 struct CurrentWeather
 {
+    // mke these optionals - they may be nil
     let temperature: Int?
     let humidity: Int?
     let precipProbability: Int?

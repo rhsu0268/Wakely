@@ -128,15 +128,19 @@ class WeatherDataController: UIViewController, CLLocationManagerDelegate {
         }
         else
         {
+            // trailing closure 
             forecastService.getForecast(Double(latitude)!, long: Double(longitude)!)
             {
                 (let currently) in
                 if let currentWeather = currently
                 {
+                    // need to get back to main thread
+                    // puts the action into the main queue
                     // update UI
                     dispatch_async(dispatch_get_main_queue())
                     {
                         // execute closure
+                        // check that they exist before updating
                         if let temperature = currentWeather.temperature
                         {
                             self.currentTemperatureLabel?.text = "\(temperature)º"
@@ -149,7 +153,7 @@ class WeatherDataController: UIViewController, CLLocationManagerDelegate {
                         
                         if let precipitation = currentWeather.precipProbability
                         {
-                            self.currentHumidityLabel?.text = "\(precipitation)%"
+                            self.currentPrecipitationLabel?.text = "\(precipitation)%"
                         }
                         
                         if let icon = currentWeather.icon

@@ -15,7 +15,7 @@ struct ForecastService
     let forecastAPIKey: String
     let forecastBaseURL: NSURL?
     
-    
+    // init method for APIKey and forecastBaseURL
     init(APIKey: String)
     {
         self.forecastAPIKey = APIKey
@@ -26,14 +26,19 @@ struct ForecastService
     
     func getForecast(lat: Double, long: Double, completion: (CurrentWeather? -> Void))
     {
+        // call download JSON method 
+        // can't return  object from inside the closure unless if you implement a callback through a callback
+        // check to see valid url and assign to constant
         if let forecastURL = NSURL(string: "\(lat),\(long)", relativeToURL: forecastBaseURL)
         {
             // create a NetworkOperation instance
             let networkOperation = NetworkOperation(url: forecastURL)
             
             // trailing closure
+            // retrieve data 
             networkOperation.downloadJSONFromURL
             {
+                // takes in jsonDictionary
                 // parse contents of dictionary and create populated instance of current weather
                 (let JSONDictionary) in
                 let currentWeather = self.currentWeatherFromJSON(JSONDictionary)
@@ -62,7 +67,7 @@ struct ForecastService
         // assign it to currentWeatherDictionary
         if let currentWeatherDictionary = jsonDictionary?["currently"] as? [String:AnyObject] {
             
-            // return the currentWeatherDictionary as an argument of currentWeater struct 
+            // assign the currentWeatherDictionary as an argument of init method for the currentWeater struct as a resulting instance
             return CurrentWeather(weatherDictionary: currentWeatherDictionary)
         } else {
             print("JSON dictionary returned nil for 'currently' key")
