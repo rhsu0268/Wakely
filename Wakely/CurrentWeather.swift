@@ -30,9 +30,7 @@ enum Icon: String
         var imageName: String
         
         
-        // match the value
-        // pass in rawValue. If it matches, we get value
-        // otherwise, it will not
+        // call method on itself
         switch self
         {
             case .ClearDay:
@@ -100,9 +98,10 @@ enum Icon: String
 
 }
 
+// populates data from dictionary
 struct CurrentWeather
 {
-    // mke these optionals - they may be nil
+    // make these optionals - they may be nil
     let temperature: Int?
     let humidity: Int?
     let precipProbability: Int?
@@ -132,6 +131,9 @@ struct CurrentWeather
         summary = weatherDictionary["summary"] as? String
         
         // check that it exists
+        // fallible initializer
+        // enums are used when we want to encapsualte a fixed set of data
+        // enums are used to scope things to do one thing
         if let iconString = weatherDictionary["icon"] as? String,
             let weatherIcon: Icon = Icon(rawValue: iconString)
             {
