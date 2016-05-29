@@ -9,7 +9,7 @@
         <!--Wakely-->
         <scene sceneID="Yyh-II-dkk">
             <objects>
-                <viewController id="kMk-i3-Sip" customClass="HomeController" customModule="Wakely" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kMk-i3-Sip" customClass="HomeController" customModule="Richard_Hsu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sXt-c4-2K6"/>
                         <viewControllerLayoutGuide type="bottom" id="4MD-cb-CGk"/>
@@ -145,10 +145,38 @@
             </objects>
             <point key="canvasLocation" x="1570" y="237"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="X74-HE-77K">
+            <objects>
+                <tableViewController id="Ykw-JK-RHe" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="983-sr-7j6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="J8i-KD-Jwi">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J8i-KD-Jwi" id="Sey-Xt-OKm">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ykw-JK-RHe" id="MX5-Xw-851"/>
+                            <outlet property="delegate" destination="Ykw-JK-RHe" id="zo9-te-VbJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCg-2a-va0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2954" y="-32"/>
+        </scene>
         <!--Weather-->
         <scene sceneID="e6G-Vi-p0Z">
             <objects>
-                <viewController id="hsy-CL-zkY" customClass="WeatherDataController" customModule="Wakely" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hsy-CL-zkY" customClass="WeatherDataController" customModule="Richard_Hsu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CGD-sv-OkZ"/>
                         <viewControllerLayoutGuide type="bottom" id="ORt-Hg-XIs"/>
@@ -257,12 +285,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fvf-Os-YHG" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3102" y="-43"/>
+            <point key="canvasLocation" x="3590" y="-23"/>
         </scene>
         <!--Timer Controller-->
         <scene sceneID="W03-E1-Wjl">
             <objects>
-                <viewController id="Dmr-jR-Y6v" customClass="TimerController" customModule="Wakely" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Dmr-jR-Y6v" customClass="TimerController" customModule="Richard_Hsu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jDC-Fx-lvP"/>
                         <viewControllerLayoutGuide type="bottom" id="Sks-2b-TxX"/>
@@ -356,7 +384,7 @@
         <!--Music Controller-->
         <scene sceneID="Liq-aV-bSU">
             <objects>
-                <viewController id="5cg-FO-GuY" customClass="MusicController" customModule="Wakely" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5cg-FO-GuY" customClass="MusicController" customModule="Richard_Hsu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y0P-L0-HvF"/>
                         <viewControllerLayoutGuide type="bottom" id="TS9-rf-U8X"/>
