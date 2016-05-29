@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D19A22E11CFA7F5D009B4585 /* WeeklyTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19A22E01CFA7F5C009B4585 /* WeeklyTableTableViewController.swift */; };
 		D1C974101CCBFEA600397306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C9740F1CCBFEA600397306 /* AppDelegate.swift */; };
 		D1C974121CCBFEA600397306 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C974111CCBFEA600397306 /* ViewController.swift */; };
 		D1C974151CCBFEA600397306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C974131CCBFEA600397306 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D19A22E01CFA7F5C009B4585 /* WeeklyTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyTableTableViewController.swift; sourceTree = "<group>"; };
 		D1C9740C1CCBFEA600397306 /* Richard_Hsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Richard_Hsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C9740F1CCBFEA600397306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1C974111CCBFEA600397306 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,7 +121,12 @@
 		D19A22DD1CFA7D11009B4585 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D1C974511CCBFF6200397306 /* MusicController.swift */,
 				D1C974631CCC013800397306 /* WeatherDataController.swift */,
+				D19A22E01CFA7F5C009B4585 /* WeeklyTableTableViewController.swift */,
+				D1C974591CCBFFC600397306 /* PeacefulMusicController.swift */,
+				D1C974651CCC014600397306 /* TimerController.swift */,
+				D1C9744D1CCBFF4F00397306 /* HomeController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -137,8 +144,35 @@
 				D1C974451CCBFEE600397306 /* CurrentWeather.swift */,
 				D1C974571CCBFFBE00397306 /* NetworkOperation.swift */,
 				D1C974491CCBFF0A00397306 /* ForecastService.swift */,
+				D1C9744B1CCBFF4700397306 /* Genre.swift */,
+				D1C974531CCBFF6800397306 /* MusicLibrary.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		D19A22E21CFA83CE009B4585 /* WeatherSongs */ = {
+			isa = PBXGroup;
+			children = (
+				D1C974411CCBFED100397306 /* cloudy.mp3 */,
+				D1C9744F1CCBFF5900397306 /* let-it-snow.mp3 */,
+				D1C974471CCBFEF700397306 /* dancing-in-the-moonlight.mp3 */,
+				D1C9745F1CCC00F100397306 /* pocket-of-sunshine.mp3 */,
+				D1C974431CCBFED800397306 /* colors-of-the-wind.mp3 */,
+				D1C9745B1CCC00D400397306 /* when-the-fog-rolls-in.mp3 */,
+				D1C974611CCC011300397306 /* umbrella.mp3 */,
+			);
+			name = WeatherSongs;
+			sourceTree = "<group>";
+		};
+		D19A22E31CFA85A2009B4585 /* GenreSongs */ = {
+			isa = PBXGroup;
+			children = (
+				D1C9743D1CCBFEC000397306 /* ambient-music.mp3 */,
+				D1C9743F1CCBFEC900397306 /* baa-baa-black-sheep.mp3 */,
+				D1C9745D1CCC00E000397306 /* spring.mp3 */,
+				D1C974551CCBFF7500397306 /* nature.mp3 */,
+			);
+			name = GenreSongs;
 			sourceTree = "<group>";
 		};
 		D1C974031CCBFEA600397306 = {
@@ -164,28 +198,13 @@
 		D1C9740E1CCBFEA600397306 /* Wakely */ = {
 			isa = PBXGroup;
 			children = (
+				D19A22E31CFA85A2009B4585 /* GenreSongs */,
+				D19A22E21CFA83CE009B4585 /* WeatherSongs */,
 				D19A22DF1CFA7D2D009B4585 /* Models */,
 				D19A22DE1CFA7D25009B4585 /* Views */,
 				D19A22DD1CFA7D11009B4585 /* Controller */,
-				D1C9743D1CCBFEC000397306 /* ambient-music.mp3 */,
-				D1C9743F1CCBFEC900397306 /* baa-baa-black-sheep.mp3 */,
-				D1C974411CCBFED100397306 /* cloudy.mp3 */,
-				D1C974431CCBFED800397306 /* colors-of-the-wind.mp3 */,
-				D1C974471CCBFEF700397306 /* dancing-in-the-moonlight.mp3 */,
-				D1C9744F1CCBFF5900397306 /* let-it-snow.mp3 */,
-				D1C9745F1CCC00F100397306 /* pocket-of-sunshine.mp3 */,
-				D1C9745D1CCC00E000397306 /* spring.mp3 */,
-				D1C9745B1CCC00D400397306 /* when-the-fog-rolls-in.mp3 */,
-				D1C9744B1CCBFF4700397306 /* Genre.swift */,
-				D1C9744D1CCBFF4F00397306 /* HomeController.swift */,
-				D1C974511CCBFF6200397306 /* MusicController.swift */,
 				D1C9740F1CCBFEA600397306 /* AppDelegate.swift */,
 				D1C974111CCBFEA600397306 /* ViewController.swift */,
-				D1C974531CCBFF6800397306 /* MusicLibrary.swift */,
-				D1C974591CCBFFC600397306 /* PeacefulMusicController.swift */,
-				D1C974651CCC014600397306 /* TimerController.swift */,
-				D1C974551CCBFF7500397306 /* nature.mp3 */,
-				D1C974611CCC011300397306 /* umbrella.mp3 */,
 				D1C974131CCBFEA600397306 /* Main.storyboard */,
 				D1C974161CCBFEA600397306 /* Assets.xcassets */,
 				D1C974181CCBFEA600397306 /* LaunchScreen.storyboard */,
@@ -360,6 +379,7 @@
 				D1C9744E1CCBFF4F00397306 /* HomeController.swift in Sources */,
 				D1C974541CCBFF6800397306 /* MusicLibrary.swift in Sources */,
 				D1C974461CCBFEE600397306 /* CurrentWeather.swift in Sources */,
+				D19A22E11CFA7F5D009B4585 /* WeeklyTableTableViewController.swift in Sources */,
 				D1C974661CCC014700397306 /* TimerController.swift in Sources */,
 				D1C974521CCBFF6200397306 /* MusicController.swift in Sources */,
 				D1C974101CCBFEA600397306 /* AppDelegate.swift in Sources */,
