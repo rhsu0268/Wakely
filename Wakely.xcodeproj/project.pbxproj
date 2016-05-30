@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D19A22E11CFA7F5D009B4585 /* WeeklyTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19A22E01CFA7F5C009B4585 /* WeeklyTableTableViewController.swift */; };
+		D19A22E51CFA88AA009B4585 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19A22E41CFA88AA009B4585 /* BackgroundView.swift */; };
 		D1C974101CCBFEA600397306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C9740F1CCBFEA600397306 /* AppDelegate.swift */; };
 		D1C974121CCBFEA600397306 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C974111CCBFEA600397306 /* ViewController.swift */; };
 		D1C974151CCBFEA600397306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C974131CCBFEA600397306 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		D19A22E01CFA7F5C009B4585 /* WeeklyTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyTableTableViewController.swift; sourceTree = "<group>"; };
+		D19A22E41CFA88AA009B4585 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		D1C9740C1CCBFEA600397306 /* Richard_Hsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Richard_Hsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C9740F1CCBFEA600397306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1C974111CCBFEA600397306 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,8 @@
 		D19A22DE1CFA7D25009B4585 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D19A22E41CFA88AA009B4585 /* BackgroundView.swift */,
+				D1C974131CCBFEA600397306 /* Main.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -205,7 +209,6 @@
 				D19A22DD1CFA7D11009B4585 /* Controller */,
 				D1C9740F1CCBFEA600397306 /* AppDelegate.swift */,
 				D1C974111CCBFEA600397306 /* ViewController.swift */,
-				D1C974131CCBFEA600397306 /* Main.storyboard */,
 				D1C974161CCBFEA600397306 /* Assets.xcassets */,
 				D1C974181CCBFEA600397306 /* LaunchScreen.storyboard */,
 				D1C9741B1CCBFEA600397306 /* Info.plist */,
@@ -384,6 +387,7 @@
 				D1C974521CCBFF6200397306 /* MusicController.swift in Sources */,
 				D1C974101CCBFEA600397306 /* AppDelegate.swift in Sources */,
 				D1C974641CCC013800397306 /* WeatherDataController.swift in Sources */,
+				D19A22E51CFA88AA009B4585 /* BackgroundView.swift in Sources */,
 				D1C974581CCBFFBE00397306 /* NetworkOperation.swift in Sources */,
 				D1C9745A1CCBFFC600397306 /* PeacefulMusicController.swift in Sources */,
 				D1C9744C1CCBFF4700397306 /* Genre.swift in Sources */,
