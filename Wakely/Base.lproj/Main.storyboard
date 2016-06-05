@@ -73,7 +73,7 @@
                                     <constraint firstAttribute="height" constant="17" id="TcR-Yf-yax"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -106,22 +106,19 @@
                     <navigationItem key="navigationItem" title="Wakely" id="Wl4-dK-laW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Le7-UB-uAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="UBz-yB-cMy">
-                    <connections>
-                        <action selector="showWeatherController:" destination="kMk-i3-Sip" id="1Xi-Rv-8vQ"/>
-                        <segue destination="Ykw-JK-RHe" kind="show" id="7sf-OK-gwM"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <tapGestureRecognizer id="Usx-BR-keb">
                     <connections>
                         <action selector="showTimerController:" destination="kMk-i3-Sip" id="GoX-IR-LQj"/>
-                        <segue destination="Dmr-jR-Y6v" kind="show" id="Pce-cw-MQi"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="lWN-QD-GHR">
                     <connections>
                         <action selector="showMusicController:" destination="kMk-i3-Sip" id="dP3-xp-QrQ"/>
-                        <segue destination="5cg-FO-GuY" kind="show" id="roj-n4-tUW"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="UBz-yB-cMy">
+                    <connections>
+                        <action selector="showWeatherController:" destination="kMk-i3-Sip" id="1Xi-Rv-8vQ"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -176,7 +173,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCg-2a-va0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3102" y="-35"/>
+            <point key="canvasLocation" x="4233" y="-168"/>
         </scene>
         <!--Weather-->
         <scene sceneID="e6G-Vi-p0Z">
@@ -290,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fvf-Os-YHG" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3792" y="-5"/>
+            <point key="canvasLocation" x="3058" y="12"/>
         </scene>
         <!--Timer Controller-->
         <scene sceneID="W03-E1-Wjl">
@@ -384,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inh-Yp-Qvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3102" y="641"/>
+            <point key="canvasLocation" x="3058" y="681"/>
         </scene>
         <!--Music Controller-->
         <scene sceneID="Liq-aV-bSU">
@@ -589,7 +586,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2418" y="975"/>
+            <point key="canvasLocation" x="2374" y="1066"/>
         </scene>
     </scenes>
     <resources>
